@@ -1,6 +1,15 @@
 ---
 layout: post
 title: TOP Command Overview
+category: 
+  -  Tech :
+    - Linux
+tags: 
+- Linux
+- TOP
+- Top command in detail
+- top command
+- Technology
 ---
 
 TOP is a tool monitor the process running on the server and able to see the top of the list with their attributes like CPU%, Memory utilization, Process ID etc.
