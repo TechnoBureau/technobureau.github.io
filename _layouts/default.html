@@ -22,7 +22,7 @@
       </div>
 
       <div class="container content">
-        {{ content }}
+        {{ post.content | strip_html | truncatewords: 50 | xml_escape}}
       </div>
     </div>
 
