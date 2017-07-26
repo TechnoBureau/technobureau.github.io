@@ -51,7 +51,7 @@ tag_page: '/tags/'
 category_page: '/categories/'
 
 hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  image: ''
   caption: ''
 
 # Puglins
