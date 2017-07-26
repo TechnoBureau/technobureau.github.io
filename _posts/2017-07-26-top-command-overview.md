@@ -1,9 +1,7 @@
 ---
 layout: post
 title: TOP Command Overview
-category: 
-  -  Tech :
-    - Linux
+category: Linux
 tags: 
 - Linux
 - TOP
