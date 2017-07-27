@@ -61,12 +61,7 @@ disqus_short_name: 'ganapathichidambaram' # leave blank if you don't want disqus
 
 timezone:  Asia/Calcutta
 encoding:             "utf-8"
-defaults:
-  
-  scope:
-      path: ""
-      type: "posts"
-    
+defaults:  
     values:
       layout: "default"
       author: "Ganapathi Chidambaram"
