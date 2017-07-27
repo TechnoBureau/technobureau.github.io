@@ -22,14 +22,15 @@ title: Blog
     <article>
       {{ post.excerpt | truncatewords:50 | markdownify  }}
     </article>
-    <div class="post-category">
+    <div class="post post-category">
       {{ post.category }}
-    </div>
-    <div class="post-more">
+    
+    <span class="post-more">
       {% if site.disqus_short_name %}
       <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       {% endif %}
       <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </span>
     </div>
   </div>
   {% endfor %}
