@@ -59,8 +59,8 @@ mathjax: true # whether support mathjax
 google_analytics_token: '' # leave blank if you don't want google analytics
 disqus_short_name: 'ganapathichidambaram' # leave blank if you don't want disqus
 
-timezone:  Asia/Calcutta
-encoding:             "utf-8"
+timezone:  "Asia/Calcutta"
+encoding:   "utf-8"
 defaults:  
     values:
       layout: "default"
