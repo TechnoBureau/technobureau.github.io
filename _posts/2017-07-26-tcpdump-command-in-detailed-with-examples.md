@@ -30,23 +30,21 @@ Below are the some of necessary filter as we are going to see which we usually r
 If we need to look for the traffic based on the IP address then mentioned below command used to filter the network packets based on the host.
 
 
-{% highlight bash %}
+- To filter the send and receive packets from this host
 
-// To filter the send and receive packets from this host
+{% highlight bash %}
 # tcpdump host 192.168.1.1
 //or
 # tcpdump src 192.168.1.1 or dst 192.168.1.1
 {% endhighlight %}
 
-
+- To filter the packets which contain source host is 192.168.1.1
 {% highlight bash %}
-// To filter the packets which contain source host is 192.168.1.1
 # tcpdump src 192.168.1.1
 {% endhighlight %}
 
-
+- To filter the packets which contain destination host is 192.168.1.1
 {% highlight bash %}
-// To filter the packets which contain destination host is 192.168.1.1
 # tcpdump dst 192.168.1.1
 {% endhighlight %}
 
