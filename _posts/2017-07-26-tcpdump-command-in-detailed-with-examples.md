@@ -52,8 +52,8 @@ If we need to look for the traffic based on the IP address then mentioned below 
 
 
         {% highlight bash %}
-        // To filter the packets on the particular network by using CIDR notation
-        # tcpdump net 192.168.1.0/24
+         // To filter the packets on the particular network by using CIDR notation
+         # tcpdump net 192.168.1.0/24
         {% endhighlight %}
 
 
@@ -65,10 +65,12 @@ If we need to filter the protocol based on the protocol name by using the below 
 
         // To filter the packets by using protocol name (arp)
         # tcpdump arp
+        {% endhighlight %}
 
         {% highlight bash %}        
         // To filter the packets by using protocol name (tcp)
         # tcpdump tcp 
+        {% endhighlight %}
 
 
         {% highlight bash %}
