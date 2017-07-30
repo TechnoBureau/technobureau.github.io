@@ -24,6 +24,7 @@ Below are the some of necessary filter as we are going to see which we usually r
 - Packet Number Limitation
 - Capture on File
 - Hostname Resolve
+- Grouping
 
 ### Host
     
