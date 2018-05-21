@@ -69,3 +69,201 @@
   color: inherit;
 }
 
+
+
+/* Recent Article*/
+
+.baseHtml ol,
+.baseHtml ul,
+.baseHtml dl {
+    margin-left: 3em;
+    margin-right: 0;
+}
+
+.baseHtml blockquote,
+.baseHtml ul,
+.baseHtml ol,
+.baseHtml dl {
+    margin: 1em;
+}
+
+.sectionMain {
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+    border: 1px solid rgb(199, 199, 199);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.RecentArticle .subHeading {
+    margin: -10px -10px 10px;
+}
+
+.subHeading {
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+    text-decoration: none;
+    background-color: rgb(213, 213, 213);
+    padding: 10px;
+    margin: 3px auto 0;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.RecentArticle .subHeading a {
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+}
+
+.RecentArticle .subHeading h2 {
+    font-size: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.RecentArticle .messageUserBlock {
+    float: right;
+    margin-left: 10px;
+}
+
+.RecentArticle .ArticleDate {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    padding: 0px 10px 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.RecentArticle .ArticleDate .ArticleMonth {
+    padding: 10px 0px 5px !important;
+    margin: 0px -10px 5px !important;
+    text-transform: uppercase;
+}
+
+.RecentArticle .ArticleDate .ArticleDay {
+    font-size: 26px;
+}
+
+.RecentArticle .leftDate .ArticleDate {
+    margin-left: -45px;
+}
+
+.RecentArticle .leftDate .ArticleText {
+    margin-left: 25px;
+}
+
+.RecentArticle .ArticleDate .ArticleYear {
+    font-size: 16px;
+    margin: 0px -10px -10px;
+    padding: 3px;
+}
+
+.RecentArticle .messageContent {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justified;
+}
+
+.RecentArticle .messageContent .postedBy {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed rgb(120, 120, 120);
+}
+
+.RecentArticle .messageContent .username {
+    font-weight: bold;
+}
+
+.RecentArticle .messageContent .comments {
+    float: right;
+    font-weight: bold;
+}
+
+.RecentArticle .messageContent .clearFix {
+    clear: right;
+}
+
+.RecentArticle .iconKey div {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 4px;
+}
+
+.RecentArticle .iconKey .sticky {
+    background-position: 0px -16px;
+}
+
+.RecentArticle .iconKey .redirect {
+    background-position: -48px -16px;
+}
+
+.RecentArticle .iconKey .new {
+    background-position: -64px -16px;
+}
+
+.RecentArticle .iconKey a {}
+
+.RecentArticle .sectionFooter {
+    margin: 10px -10px -10px;
+    text-align: right;
+    position: relative;
+}
+
+.sectionFooter {
+    zoom: 1;
+    font-size: 14px;
+    color: #707070;
+    background-color: rgb(213, 213, 213);
+    padding: 10px;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    line-height: 16px;
+}
+
+.RecentArticle .sectionFooter .continue {
+    font-size: 12px;
+}
+
+.RecentArticle .sectionFooter .continue .redirect {
+    margin: 3px 4px 0px 0px;
+}
+
+.RecentArticle .sectionFooter .categories {
+    float: left;
+}
+
+.RecentArticle .sectionFooter .categories li {
+    display: inline;
+}
+
+.RecentArticle .sectionFooter .sharePage {
+    position: absolute;
+}
+
+.RecentArticle .sectionFooter .shareControl {
+    margin-top: 6px !important;
+}
+
+.titleBar h1 {
+    font-size: 18pt;
+    font-family: 'Exo', sans-serif;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    zoom: 1;
+    text-transform: uppercase;
+    font-weight: Bold;
+    margin-bottom: 10px;
+}
+
+.messageArticle {
+    padding-top: 10px;
+}
+
+.SharePageControl {
+    float: right;
+    margin-top: -30px;
+}
+
+
+

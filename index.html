@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-
+<!--
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -26,16 +26,92 @@ title: Blog
     <div class="post-category">
       {{ post.category }}
     </div>-->
-    <div class="post-more">
+    <!--<div class="post-more">
       {% if site.disqus_short_name %}
       <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       {% endif %}
       <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
+    </div>-->
     <!--</div>-->
-  </div>
+  <!--</div>
   {% endfor %}
-</div>
+</div>-->
+
+<div id="RecentArticle">
+  
+  {% for post in paginator.posts %}
+  
+    <div class="section sectionMain RecentArticle" id="{{ post.title }}"> <!-- sectionMain START -->
+        <div class="primaryContent ">   <!-- primaryContent START -->
+          <div class="subHeading"><!-- subHeading START -->
+  
+                  <div style="float: right; white-space: nowrap;">
+  
+                  </div>
+  
+                  <h2>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="ArticleTitle"  itemprop="name"> {{ post.title }}</a>
+            </h2>
+              </div> <!-- subHeading EnD -->
+  
+              <div class="ArticleDate secondaryContent"><!-- ArticleDate START -->
+  
+                      <div class="ArticleMonth heading">
+                         <!--{!!$article->updated_at->format('M') !!}-->
+                      </div>
+  
+                      <div class="ArticleDay">
+                        <!--  {!!$article->updated_at->format('d') !!}-->
+                      </div>
+                   <div class="ArticleYear">
+                        <!--  {!!$article->updated_at->format('Y') !!}-->
+                      </div>
+              </div> <!-- ArticleDate EnD -->
+  
+              <div class="messageContent baseHtml"><!-- Message Content START -->
+  
+                  <div class="postedBy">
+  
+                      <span class="posted iconKey">by
+                <a href="https://github.com/ganapathichidambaram" class="username" itemprop="author" >{{ post.author }}</a> at
+                <a href="{{ site.baseurl }}{{ post.url }}" itemprop="datePublished"> {{ post.date | date_to_string }}</a>
+                      </span>
+            </div>
+  
+                  <div class="ArticleText" itemprop="articleBody">
+                      {{ post.excerpt | truncatewords:150 | markdownify  }}
+                  </b></i></strong>
+      </div>
+  
+                  <div class="clearFix">
+  
+                  </div>
+              </div><!-- Message Content EnD -->
+  
+              <div class="sectionFooter"><!-- Section Footer START -->
+  
+                  <div class="categories" itemprop="articleSection">
+  
+                      <ul>
+                          <li>
+                              <a href="{{ site.baseurl }}/category/#{{ post.category | slugify }}" class="button">{{ post.category }}</a>
+                          </li>
+                      </ul>
+          </div>
+  
+                  <div class="continue">
+  
+                      <a class="iconKey button ajax-link" href="{{ site.baseurl }}{{ post.url }}">         Continue reading...       </a>
+          </div>
+              </div><!-- Section Footer END -->
+          </div>   <!-- primaryContent END -->
+      </div>    <!-- sectionMain END -->
+  
+      {% endfor %}
+  
+  </div>
+
+
 
 <div class="pagination">
   {% if paginator.next_page %}
