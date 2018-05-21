@@ -97,9 +97,9 @@
     border-radius: 4px;
 }
 
-.RecentArticle .subHeading {
+/*.RecentArticle .subHeading {
     margin: -10px -10px 10px;
-}
+}*/
 
 .subHeading {
     font-size: 14px;
@@ -107,7 +107,7 @@
     text-decoration: none;
     background-color: rgb(213, 213, 213);
     padding: 10px;
-    margin: 3px auto 0;
+    /*margin: 3px auto 0;*/
     border-bottom: 1px solid rgb(182, 182, 182);
 }
 
@@ -162,6 +162,7 @@
 .RecentArticle .messageContent {
     font-size: 15px;
     line-height: 1.4;
+    margin-left: 10px;
     text-align: justified;
 }
 
@@ -206,7 +207,7 @@
 .RecentArticle .iconKey a {}
 
 .RecentArticle .sectionFooter {
-    margin: 10px -10px -10px;
+/*    margin: 10px -10px -10px;*/
     text-align: right;
     position: relative;
 }
