@@ -36,38 +36,6 @@ entries:
           url: /firefox-and-firebug-javascript/
         - title: AJAX
           url: /ajax-javascript/
-    - title: Profile Matching
-      audience: fe, customer
-      platform: all
-      product: all
-      version: "1.0"
-      items:
-        - title: Matching Overview
-          url: /matching_overview/
-          audience: fe, customer
-          platform: all
-          product: all
-          version: "1.0"
-
-        - title: Merging Profiles
-          url: /merging_profiles/
-          audience: fe, customer
-          platform: all
-          product: all
-          version: "1.0"
-          thirdlevel:
-            - title: Video Tutorials
-              audience: fe, customer
-              platform: all
-              product: all
-              version: "1.0"
-              thirdlevelitems:
-                - title: "Scenario 1: Basic Matching"
-                  url: /scenario1/
-                  audience: fe, customer
-                  platform: all
-                  product: all
-                  version: "1.0"
     - title: Java
       items:
         - title: Merging Profiles

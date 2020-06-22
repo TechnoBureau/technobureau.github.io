@@ -1,5 +1,7 @@
 _site/
 .sass-cache/
+.vs
+.vscode
 .jekyll-metadata
 **/audio/
 **/pdf
