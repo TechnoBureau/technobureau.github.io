@@ -1,12 +1,12 @@
-#repository:
+#repository: ganapathichidambaram/ganapathichidambaram.github.io
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Ganapathi Documentation
+topnav_title: "Ganapathi's Documentation"
 # this appears on the top navigation bar next to the home button
 
-site_title: Ganapathi Documentation
+site_title: "Ganapathi's Documentation"
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Ganapathi Chidambaram
@@ -33,7 +33,7 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Ganapathi Documentation
+feedback_subject_line: "[Feedback] Ganapathi Documentation"
 
 feedback_email: ganapathi.rj@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
@@ -44,7 +44,7 @@ feedback_email: ganapathi.rj@gmail.com
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+# feedback_link: "http://technobureau.com/"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
@@ -101,9 +101,8 @@ defaults:
 
 sidebars:
 - home_sidebar
-- mydoc_sidebar
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "A Tutorial for Linux learning enthuaist."
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
