@@ -33,7 +33,7 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: [Feedback] Ganapathi Documentation
+feedback_subject_line: Ganapathi Documentation
 
 feedback_email: ganapathi.rj@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
