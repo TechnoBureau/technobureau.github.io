@@ -1,106 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    {% include head.html %}
-    <script>
-        $(document).ready(function() {
-            // Initialize navgoco with default options
-            $("#mysidebar").navgoco({
-                caretHtml: '',
-                accordion: true,
-                openClass: 'active', // open
-                save: false, // leave false or nav highlighting doesn't work right
-                cookie: {
-                    name: 'navgoco',
-                    expires: false,
-                    path: '/'
-                },
-                slide: {
-                    duration: 400,
-                    easing: 'swing'
-                }
-            });
+  {% include google_analytics.html %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 170 }}{% else %}{{page.content | strip | strip_html | truncate: 170}}{% endif %}">
+    <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 
-            $("#collapseAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', false);
-            });
+    <title>{% if page.jtype == "homepage" %}{{ site.name }} | {{site.description}} {% else %} {{ page.title }} {% if page.subtitle %}{{ page.subtitle | before: "|" }}{% endif %} | {{ site.name }} {% endif %}</title>
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ "/css/customstyles.min.css" | prepend:site.baseurl }}"  type='text/css'>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    {% seo %}
+    </head>
 
-            $("#expandAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', true);
-            });
 
-        });
+    <body>
 
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("#tg-sb-link").click(function() {
-                $("#tg-sb-sidebar").toggle();
-                $("#tg-sb-content").toggleClass('col-md-9');
-                $("#tg-sb-content").toggleClass('col-md-12');
-                $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                $("#tg-sb-icon").toggleClass('fa-toggle-off');
-            });
-        });
-    </script>
-    {% if page.datatable == true %}
-    <!-- Include the standard DataTables bits -->
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
-    <!-- First, this walks through the tables that occur between ...-begin
-         and ...-end and add the "datatable" class to them.
-         Then it invokes DataTable's standard initializer
-         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
-      -->
-    <script>
-      $(document).ready(function(){
-          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
-          $('table.display').DataTable( {
-              paging: true,
-              stateSave: true,
-              searching: true
-          });
-       });
-    </script>
-    {% endif %}
+    <div id="masthead">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <div class="topComic">
+              <figure class="topComic">
+              {% include topComic.html %}
+            </figure>
+            </div>  <!-- /topComic -->
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+            <div class="siteLogo"><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "https://idratherbewritingmedia.com/images/idratherbewriting-site-logo.png" | prepend: site.baseurl }}" alt="Home" /></a>
+            </div><!-- /siteLogo -->
+            </div><!-- /col-md-7 -->
+            </div><!-- /row -->
+            </div><!-- /container -->
+            <!-- /cont -->
+            <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <div class="top-spacer"> </div>
+            </div><!-- /col-md-12 -->
+            </div><!-- /row -->
+            </div><!-- /container -->
 
-</head>
-<body>
-{% include topnav.html %}
-<!-- Page Content -->
-<div class="container">
-  <div id="main">
-    <!-- Content Row -->
-    <div class="row">
-        {% assign content_col_size = "col-md-12" %}
-        {% unless page.hide_sidebar %}
+            </div><!-- /masthead -->
+
+            {% include topnav.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+            <!-- Content Row -->
+            <div class="row">
             <!-- Sidebar Column -->
-            <div class="col-md-3" id="tg-sb-sidebar">
-                {% include sidebar.html %}
-            </div>
-            {% assign content_col_size = "col-md-9" %}
-        {% endunless %}
+            <div class="col-md-3">
+            <div id="sidebarArea">
 
-        <!-- Content Column -->
-        <div class="{{content_col_size}}" id="tg-sb-content">
-            {{content}}
-        </div>
-    <!-- /.row -->
-</div>
-<!-- /.container -->
-</div>
-<!-- /#main -->
+              <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+              {% include sidebar.html %}
+              {% include tinyletter.html %}
+              {% include social_media_icons.html %}
+          {% include sidebar_comics.html %}
+          <div>
+          <p></p>
+    </ul>
     </div>
+    </div> <!-- /sidebarArea -->
+    </div><!-- /col-md-3 -->
 
-</body>
-{% if site.google_analytics %}
-{% include google_analytics.html %}
-{% endif %}
-</html>
+
+    <!-- Content Column -->
+
+    <div class="col-md-9">
+      <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
+      {% include search_results.html %}
+      <script src="{{ "/js/toc.js" | prepend:site.baseurl }}"></script>
+      <div id="content">{{content}}</div>
+
+    <div id="sidebarAreaHomePage">
+            <!-- appears for mobile view only-->
+            <ul id="mytechsidebar" class="nav">
+              {% include notestoc.html %}
+        {% include tinyletter2.html %}
+        {% include social_media_icons.html %}
+        {% include sidebar_comics.html %}
+        <div>
+
+    </ul>
+    </div> <!-- /sidebarAreaHomePage -->
+
+    </div> <!-- /col-md-9 -->
+
+    </div><!-- /row -->
+    <hr>
+    </div><!-- /container -->
+    <script src="https://cdn.commento.io/js/count.js"></script>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=263655980663798&autoLogAppEvents=1"></script>
+    </body>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/css/syntax.min.css" | prepend:site.baseurl }}"  type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+    <link rel="shortcut icon" href="//idratherbewriting.com/favicon.ico" type="image/x-icon">
+
+
+
+<!-- activate bootstrap tooltips -->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $("#tg-sb-link").click(function() {
+            $("#sidebarArea").toggleClass('navToggle');
+            $(".col-md-9").toggleClass('expand');
+            $(".col-md-7").toggleClass('expand');
+            $("#tg-sb-icon").toggleClass('fa-toggle-on');
+            $("#tg-sb-icon").toggleClass('fa-toggle-off');
+        });
+    });
+    </script>
+
+    </html>

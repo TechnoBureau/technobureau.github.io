@@ -1,9 +1,6 @@
 
 /*body.print .container {max-width: 650px;}*/
 
-body {
-    font-size:14px;
-}
 .nav ul li a {border-top:0px; background-color:transparent; color: #808080; }
 #navig a[href] {color: #595959 !important;}
 table .table {max-width:650px;}
@@ -13,13 +10,16 @@ table .table {max-width:650px;}
 
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
 
-a[href]::after {
-    content: " (page " target-counter(attr(href), page) ")"
-}
+a[href]::after {  content: " (page " target-counter(attr(href), page) ")"  }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
-    content: "";
+    content: " (" attr(href) ")";
 }
+
+a[href^="http://127.0.0.1:4033/docapis"]::after, a[href^="http://127.0.0.1:4033/docapis"]::after {
+{  content: " (page " target-counter(attr(href), page) ")"  };
+}
+
 
 a[href] {
     color: blue !important;
@@ -28,9 +28,8 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     content: "";
 }
 
-
 @page {
-    margin: 60pt 90pt 60pt 90pt;
+    margin: 50pt 80pt 50pt 80pt;
     font-family: sans-serif;
     font-style:none;
     color: gray;
@@ -48,7 +47,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .printSubtitle {
     font-size: 19pt;
     color: #cccccc !important;
-    font-family: "Grotesque MT Light";
+    front-family: "Grotesque MT Light";
     line-height: 22pt;
     letter-spacing: -.5px;
     margin-bottom:20px;
@@ -59,14 +58,14 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     width: 100%;
 }
 
-.printTitleImage {
-    max-width:300px;
-    margin-bottom:200px;
-}
+/*.printTitleImage {*/
+    /*max-width:300px;*/
+    /*margin-bottom:200px;*/
+/*}*/
 
 
 .printTitleImage {
-    max-width: 250px;
+    max-width: 800px;
 }
 
 #navig {
@@ -75,7 +74,6 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 
 .copyrightBoilerplate {
     page-break-before:always;
-    font-size:14px;
 }
 
 .lastGeneratedDate {
@@ -121,7 +119,7 @@ body.frontmatter {counter-reset: page 1}
         content: counter(page, lower-roman);
     }
     @bottom-left {
-        content: "youremail@domain.com";   }
+        content: "tomjoht@gmail.com";   }
 }
 
 body.first_page {counter-reset: page 1}
@@ -149,11 +147,22 @@ h1 { string-set: doctitle content() }
     }
 }
 .alert {
-    background-color: #fafafa !important;
+    background-color: #f0f0f0 !important;
     border-color: #dedede !important;
-    color: black;
 }
 
-pre {
-    background-color: #fafafa;
+body {
+    font-size:13px;
 }
+body p, body li {
+    line-height: 24px;
+}
+
+.printTitle {
+    color: #5b893c !important;
+}
+
+body.print h1 {color: #5b893c !important; font-size:32px;}
+body.print h2 {color: #595959 !important; font-size:22px;}
+body.print h3 {color: #E50E51 !important; font-size:18px;}
+body.print h4 {color: #679DCE !important; font-size:16px; font-style: italic;}
