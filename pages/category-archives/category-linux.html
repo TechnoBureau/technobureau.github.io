@@ -7,13 +7,13 @@ categoryName: linux
 <div class="post-content">
 
     <div class="home-post-title">
-        {% for post in paginator.posts %}
+        {% for post in paginator.site.categories.linux %}
       {% unless post.categories contains "family" %}
 
         <div class="entry"><a href="{{ post.url }}">{{ post.title }}</a>
             <div class="home-post-meta">
                 {{ post.date | date: "%b %-d, %Y" }} &#8226;
-                {% for cat in post.categories.linux %}
+                {% for cat in post.categories %}
                 <a href="{{ "/tech/" | prepend: site.baseurl | append: cat}}">{{cat}}</a>{% unless forloop.last %}, {% endunless%}
                 {% endfor %}
                  &#8226; <a href="{{ post.url }}#commento"></a>
