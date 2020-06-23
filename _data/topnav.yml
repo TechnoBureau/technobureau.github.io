@@ -7,8 +7,16 @@ topnav:
     - title: Home
       url: https://ganapathichidambaram.github.io/
 
-    - title: API documentation course
-      url: /learnapidoc/
+    - title: Linux
+      url: /tech/linux/
+    - title: DevOps
+      url: /tech/devops/
+    - title: Tools
+      items:
+          - title: Ansible
+          - url: /tech/Ansible/
+          - title: Airflow
+          - url: /tech/airflow/
 
     # - title: Simplifying complexity
     #   url: /simplifying-complexity/
