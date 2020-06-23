@@ -10,9 +10,9 @@ keywords:
 - linux-command
 - monitoring
 description:
-TOP is a tool to monitor the process running on the server and able to see the list of process with their attributes like CPU%, Memory utilization, Process ID etc.
+"TOP is a tool to monitor the process running on the server and able to see the list of process with their attributes like CPU%, Memory utilization, Process ID etc.
 
-Each Set of Rows contain displays some set of information about the system realtime.
+Each Set of Rows contain displays some set of information about the system realtime."
 ---
 
 
