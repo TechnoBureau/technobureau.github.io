@@ -1,5 +1,5 @@
-title: "Ganapathi Chidambaram - Blog"
-name: "Ganapathi Chidambaram"
+title: "A Technology Intelligence"
+name: "TechnoBureau"
 description: A Tutorial for Linux learning enthuaist.
 media: https://ganapathichidambaram.github.io
 host: 127.0.0.1
@@ -95,7 +95,7 @@ target: web
 #eventbrite_public_token: FUQRFCCTNLYIUXJZQCSV
 
 ####### jekyll seo tag configuration #######
-title: Ganapathi Chidambaram
+title: TechnoBureau
 tagline: A Tutorial for Linux learning enthuaist.
 description: A Tutorial for Linux learning enthuaist.
 url: https://ganapathichidambaram.github.io
