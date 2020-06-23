@@ -5,7 +5,6 @@ _site/
 .jekyll-metadata
 **/audio/
 **/pdf
-**/images/
 **/audio/
 **/video/
 **/*.mp4
@@ -13,14 +12,11 @@ _site/
 **/*.wav
 **/*.mp3
 **/*.snagproj
-**/*.png
 **/*.gif
-**/*.jpg
 **/*.bmp
 **/*.svg
 **/*.ai
 **/*.psd
-**/*.ico
 **/*.rtf
 **/*.docx
 **/*.docm
@@ -45,4 +41,3 @@ _site/
 **/*.idea
 .DS_Store
 reindex.sh
-images
