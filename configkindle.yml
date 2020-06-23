@@ -1,8 +1,8 @@
-name: "I'd Rather Be Writing"
-description: Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.
+name: "Ganapathi Chidambaram - Blog"
+description: A Tutorial for Linux learning enthuaist.
 host: 127.0.0.1
 port: 4030
-feedback_email: tomjoht@gmail.com
+feedback_email: ganapathi.rj@gmail.com
 sidebar_accordion: true
 
 encoding: ISO-8859-1
@@ -16,7 +16,7 @@ kramdown:
 
 # encoding: ISO-8859-1
 
-timezone: America/Los_Angeles
+timezone: Asia/Kolkata
 highlighter: rouge
 markdown: kramdown
 kramdown:

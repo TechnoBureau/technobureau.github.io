@@ -31,7 +31,6 @@ url: https://ganapathichidambaram.github.io
 exclude:
   - _drafts
   - .idea
-  - .vs
   - .vscode
   - _site
   - vendor
@@ -68,14 +67,6 @@ defaults:
       type: "tooltips_demo"
     values:
       layout: "page"
-      search: true
-  -
-    scope:
-      path: ""
-      type: "restapicourse"
-    values:
-      layout: "page_restapicourse"
-      comments: true
       search: true
 
 #  -

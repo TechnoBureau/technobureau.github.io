@@ -1,3 +1,3 @@
-# Blog files for I'd Rather Be Writing 
+# Blog files for Ganapathi Chidambaram
 
-This is the Jekyll site for idratherbewriting.com.
+This is the Jekyll site for ganapathichidambaram.github.io.

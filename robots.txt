@@ -1,2 +1,1 @@
-Sitemap: https://idratherbewriting.com/sitemap.xml
-Sitemap: https://idratherbewriting.com/learnapidoc/sitemap.xml
+Sitemap: https://ganapathichidambaram.github.io/sitemap.xml

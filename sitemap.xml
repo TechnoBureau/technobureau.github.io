@@ -5,7 +5,7 @@ layout: none
   {% for page in site.pages %}
   <url>
     <loc>
-      {{page.url | prepend: "https://idratherbewriting.com"}}
+      {{page.url | prepend: "https://ganapathichidambaram.github.io"}}
     </loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
@@ -13,7 +13,7 @@ layout: none
   {% for post in site.posts %}
   <url>
     <loc>
-      {{post.url | prepend: "https://idratherbewriting.com"}}
+      {{post.url | prepend: "https://ganapathichidambaram.github.io"}}
     </loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
