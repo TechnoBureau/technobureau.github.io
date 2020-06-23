@@ -18,13 +18,14 @@ topnav_dropdowns:
 - title: Topnav dropdowns
   subcategories:
 
-    - title: Tools
+  - title: Tools
     items:
         - title: Ansible
         url: /tech/Ansible/
         - title: Airflow
         url: /tech/airflow/
-    - title: Archives
+
+  - title: Archives
     items:
         - title: 2017
         url: /archives/2017/
@@ -37,8 +38,8 @@ topnav_dropdowns:
         - title: Tags
         url: /tags
 
-    - title: About
-      items:
+  - title: About
+    items:
         - title: About me
             url: /aboutme/
         - title: Contact
