@@ -8,8 +8,7 @@ keywords:
 - linux
 - packet sniffer
 - network analysis
-description:
-"TCPDUMP is a command line tool in linux to capture the network on the system to analysis the network flow of the pc in the network.
+description:"TCPDUMP is a command line tool in linux to capture the network on the system to analysis the network flow of the pc in the network.
 
 With various options we can able to filter the network capture on the system to analysis more easily."
 ---
