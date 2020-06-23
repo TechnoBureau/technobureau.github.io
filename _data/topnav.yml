@@ -40,10 +40,10 @@ topnav_dropdowns:
 
   - title: About
     items:
-        - title: About me
-            url: /aboutme/
-        - title: Contact
-            url: /contact/
+    - title: About me
+      url: /aboutme/
+    - title: Contact
+      url: /contact/
 
       # - title: User-Centered Documentation
       #   url: https://idratherbewriting.com/ucd-introduction/
