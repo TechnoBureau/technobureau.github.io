@@ -3,14 +3,14 @@ title: Tags
 permalink: /tags/
 layout: page
 mytags:
-- title: Academic Guest Posts
-  url: /category-academics-and-practitioners/
-- title: Visual communication
-  url: /category-visual-communication/
-- title: Wikis
-  url: /category-wikis/
-- title: Writing
-  url: /category-writing/
+- title: Linux
+  url: /tech/linux/
+- title: DevOps
+  url: /tech/devops/
+- title: Ansible
+  url: /tech/ansible/
+- title: Airflow
+  url: /tech/airflow/
 ---
 
 {% for item in page.mytags %}

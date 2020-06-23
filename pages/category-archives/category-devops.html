@@ -1,10 +1,9 @@
 ---
-title: A Technology Intelligence
-layout: page
-focus: homepage
-jtype: homepage
-focus: noform
+title: "Linux Posts"
+permalink: /tech/devops/
+categoryName: devops
 ---
+
 <div class="post-content">
 
     <div class="home-post-title">
@@ -14,7 +13,7 @@ focus: noform
         <div class="entry"><a href="{{ post.url }}">{{ post.title }}</a>
             <div class="home-post-meta">
                 {{ post.date | date: "%b %-d, %Y" }} &#8226;
-                {% for cat in post.categories %}
+                {% for cat in post.categories.devops %}
                 <a href="{{ "/tech/" | prepend: site.baseurl | append: cat}}">{{cat}}</a>{% unless forloop.last %}, {% endunless%}
                 {% endfor %}
                  &#8226; <a href="{{ post.url }}#commento"></a>

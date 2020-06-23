@@ -4,7 +4,7 @@ baseurl: "/docapis"
 port: 4033
 output: pdf
 print_title: Documenting REST APIs
-print_subtitle: "Tom Johnson"
+print_subtitle: "Ganapathi Chidambaram"
 defaults:
   -
     scope:
