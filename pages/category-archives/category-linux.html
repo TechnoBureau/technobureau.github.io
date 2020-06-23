@@ -3,11 +3,10 @@ title: "Linux Posts"
 permalink: /tech/linux/
 categoryName: linux
 ---
-
 <div class="post-content">
 
     <div class="home-post-title">
-        {% for post in paginator.site.categories.linux %}
+        {% for post in paginator.posts %}
       {% unless post.categories contains "family" %}
 
         <div class="entry"><a href="{{ post.url }}">{{ post.title }}</a>
