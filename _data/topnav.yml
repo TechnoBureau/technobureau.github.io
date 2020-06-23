@@ -18,22 +18,22 @@ topnav_dropdowns:
 - title: Topnav dropdowns
   subcategories:
     - title: Tools
-      items:
-        - title: Ansible
-            url: /tech/Ansible/
-        - title: Airflow
-            url: /tech/airflow/
-  - title: Archives
     items:
-      - title: 2017
+        - title: Ansible
+        url: /tech/Ansible/
+        - title: Airflow
+        url: /tech/airflow/
+    - title: Archives
+    items:
+        - title: 2017
         url: /archives/2017/
-      - title: 2018
+        - title: 2018
         url: /archives/2018/
-      - title: 2019
+        - title: 2019
         url: /archives/2019/
-      - title: 2020
+        - title: 2020
         url: /archives/2020/
-      - title: Tags
+        - title: Tags
         url: /tags
 
     - title: About
