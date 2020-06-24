@@ -3,4 +3,10 @@ title: "Linux Posts"
 permalink: /tech/linux/
 categoryName: linux
 ---
-{% include category.html %}
+<div class="post-content">
+    <div class="home-post-title">
+    {% for post in site.categories.{{page.categoryName}} %}
+    {% include category.html %}
+    {% endfor %}
+    </div>
+</div>
