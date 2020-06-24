@@ -1,6 +1,6 @@
 <div class="post-content">
     <div class="home-post-title">
-    {% assign thisYear = page.categoryName %}
+    {% assign thisYear = page.year %}
     {% for post in site.posts %}
     {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
     {% if year == thisYear %}
