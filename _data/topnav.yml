@@ -21,7 +21,7 @@ topnav_dropdowns:
   - title: Tools
     items:
     - title: Ansible
-      url: /tech/Ansible/
+      url: /tech/ansible/
     - title: Airflow
       url: /tech/airflow/
 

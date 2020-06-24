@@ -3,32 +3,4 @@ title: "Linux Posts"
 permalink: /tech/linux/
 categoryName: linux
 ---
-<div class="post-content">
-
-    <div class="home-post-title">
-        {% for post in site.categories.{{page.categoryName}} %}
-
-        <div class="entry"><a href="{{ post.url }}">{{ post.title }}</a>
-            <div class="home-post-meta">
-                {{ post.date | date: "%b %-d, %Y" }} &#8226;
-                {% for cat in post.categories %}
-                <a href="{{ "/tech/" | prepend: site.baseurl | append: cat}}">{{cat}}</a>{% unless forloop.last %}, {% endunless%}
-                {% endfor %}
-                 &#8226; <a href="{{ post.url }}#commento"></a>
-            </div>
-            <div>{% if post.image %}
-                <div class="thumb"> <a href="{{ post.url }}"><img src="{{post.image}}" alt="{{post.title}}"/></a>
-                </div>
-                {% endif %}
-                <div class="homepageSummary">{{post.description}}</div>
-
-            </div>
-            <div style="clear:left;"></div>
-            {% endfor %}
-
-        </div>
-    </div>
-
-</div>
-
-{% include categorylogic.html %}
+{% include category.html %}
