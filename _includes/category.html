@@ -1,6 +1,7 @@
 <div class="post-content">
     <div class="home-post-title">
     {% assign thisCategory = page.categoryName %}
+
     {% for post in site.posts %}
     {% for category in post.categories %}
     {% if category == thisCategory %}
@@ -22,6 +23,29 @@
          {% endif %}
          {% endfor %}
          {% endfor %}
+
+    {% for pa in site.pages %}
+    {% for category in pa.categories %}
+    {% if category == thisCategory %}
+        <div class="entry"><a href="{{ pa.url }}">{{ pa.title }}</a>
+            <div class="home-post-meta">
+                {{ pa.date | date: "%b %-d, %Y" }} &#8226;
+                {% for cat in pa.categories %}
+                <a href="{{ "/tech/" | prepend: site.baseurl | append: cat}}">{{cat}}</a>{% unless forloop.last %}, {% endunless%}
+                {% endfor %}
+                 &#8226; <a href="{{ pa.url }}#commento"></a>
+            </div>
+            <div>{% if pa.image %}
+                <div class="thumb"> <a href="{{ pa.url }}"><img src="{{pa.image}}" alt="{{pa.title}}"/></a>
+                </div>
+                {% endif %}
+                <div class="homepageSummary">{{pa.description}}</div>
+            </div>
+            <div style="clear:left;"></div>
+         {% endif %}
+         {% endfor %}
+         {% endfor %}
+
         </div>
     </div>
 </div>
