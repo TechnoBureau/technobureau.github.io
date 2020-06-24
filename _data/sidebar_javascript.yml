@@ -4,49 +4,49 @@ entries:
     - title: JavaScript
       items:
         - title: Introduction
-          url: /javascript/
+          url: /programming/javascript/introduction/
 
         - title: Numbers
-          url: /numbers-javascript/
+          url: /programming/javascript/numbers-javascript/
 
         - title: Strings
-          url: /strings-javascript/
+          url: /programming/javascript/strings-javascript/
 
         - title: Variables
-          url: /variables-javascript/
+          url: /programming/javascript/variables-javascript/
 
         - title: Dates
-          url: /dates-javascript/
+          url: /programming/javascript/dates-javascript/
 
         - title: Loops
-          url: /loops-javascript/
+          url: /programming/javascript/loops-javascript/
 
         - title: Functions
-          url: /functions-javascript/
+          url: /programming/javascript/functions-javascript/
 
         - title: Objects
-          url: /objects-javascript/
+          url: /programming/javascript/objects-javascript/
 
         - title: Conditional code
-          url: /conditional-code-javascript/
+          url: /programming/javascript/conditional-code-javascript/
 
         - title: Arrays
-          url: /arrays-javascript/
+          url: /programming/javascript/arrays-javascript/
 
         - title: Events and listeners
-          url: /events-and-listeners-javascript/
+          url: /programming/javascript/events-and-listeners-javascript/
 
         - title: jQuery
-          url: /jquery-a-javascript-library-javascript/
+          url: /programming/javascript/jquery-a-javascript-library-javascript/
 
         - title: Inserting elements
-          url: /insertion-of-elements-javascript/
+          url: /programming/javascript/insertion-of-elements-javascript/
 
         - title: Document object model
-          url: /document-object-model-javascript/
+          url: /programming/javascript/document-object-model-javascript/
 
         - title: Firefox and Firebug
-          url: /firefox-and-firebug-javascript/
+          url: /programming/javascript/firefox-and-firebug-javascript/
 
         - title: AJAX
-          url: /ajax-javascript/
+          url: /programming/javascript/ajax-javascript/

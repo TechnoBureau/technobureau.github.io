@@ -25,16 +25,24 @@ topnav_dropdowns:
     - title: Airflow
       url: /tech/airflow/
 
+  - title: Programming
+    items:
+    - title: Javascript
+      url: /programming/javascript/
+    - title: Java
+      url: /programming/java/
+
+
   - title: Archives
     items:
     - title: 2017
-      url: /archives/2017/
+      url: /archive/2017/
     - title: 2018
-      url: /archives/2018/
+      url: /archive/2018/
     - title: 2019
-      url: /archives/2019/
+      url: /archive/2019/
     - title: 2020
-      url: /archives/2020/
+      url: /archive/2020/
     - title: Tags
       url: /tags
 

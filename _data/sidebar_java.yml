@@ -4,148 +4,148 @@ entries:
     - title: Core concepts
       items:
         - title: Introduction
-          url: /java-introduction/
+          url: /programming/java/java-introduction/
 
         - title: Classes
-          url: /java-classes/
+          url: /programming/java/java-classes/
 
         - title: Methods
-          url: /java-methods/
+          url: /programming/java/java-methods/
 
         - title: Objects
-          url: /java-objects/
+          url: /programming/java/java-objects/
 
         - title: Constructors
-          url: /java-constructors/
+          url: /programming/java/java-constructors/
 
         - title: Interfaces
-          url: /java-interfaces/
+          url: /programming/java/java-interfaces/
 
         - title: Subclasses
-          url: /java-subclasses/
+          url: /programming/java/java-subclasses/
 
         - title: Inheritance
-          url: /java-inheritance/
+          url: /programming/java/java-inheritance/
 
         - title: Packages
-          url: /java-packages/
+          url: /programming/java/java-packages/
 
         - title: Getters and setters
-          url: /java-getters-and-setters/
+          url: /programming/java/java-getters-and-setters/
 
         - title: Modifiers
-          url: /java-modifiers/
+          url: /programming/java/java-modifiers/
 
         - title: Access modifiers
-          url: /java-access-modifiers/
+          url: /programming/java/java-access-modifiers/
 
         - title: Abstract methods
-          url: /java-abstract-methods/
+          url: /programming/java/java-abstract-methods/
 
         - title: Variables
-          url: /java-variables/
+          url: /programming/java/java-variables/
 
         - title: Constants
-          url: /java-constants/
+          url: /programming/java/java-constants/
 
         - title: Primitive data types
-          url: /java-primitive-data-types/
+          url: /programming/java/java-primitive-data-types/
 
         - title: Setters
-          url: /java-setters/
+          url: /programming/java/java-setters/
 
         - title: Handling exceptions
-          url: /java-handling-exceptions/
+          url: /programming/java/java-handling-exceptions/
 
         - title: Loops
-          url: /java-loops/
+          url: /programming/java/java-loops/
 
         - title: Continue
-          url: /java-continue/
+          url: /programming/java/java-continue/
 
         - title: If else
-          url: /java-if-else/
+          url: /programming/java/java-if-else/
 
         - title: Break
-          url: /java-break/
+          url: /programming/java/java-break/
 
         - title: Hashmaps
-          url: /java-hashmaps/
+          url: /programming/java/java-hashmaps/
 
         - title: Treemaps
-          url: /java-treemaps/
+          url: /programming/java/java-treemaps/
 
         - title: Collections Framework
-          url: /java-collections-framework/
+          url: /programming/java/java-collections-framework/
 
         - title: Javadoc tags
-          url: /java-javadoc-tags/
+          url: /programming/java/java-javadoc-tags/
 
         - title: Code formatting
-          url: /java-code-formatting/
+          url: /programming/java/java-code-formatting/
 
         - title: Comments
-          url: /java-comments/
+          url: /programming/java/java-comments/
 
         - title: Servlet
-          url: java-servlet
+          url: /programming/java/java-servlet
 
         - title: Tomcat
-          url: /java-tomcat/
+          url: /programming/java/java-tomcat/
 
         - title: Eclipse IDE
-          url: /java-eclipse/
+          url: /programming/java/java-eclipse/
 
         - title: Eclipse shortcuts
-          url: /java-eclipse-shortcuts/
+          url: /programming/java/java-eclipse-shortcuts/
 
         - title: Mercurial
-          url: /java-mercurial/
+          url: /programming/java/java-mercurial/
 
         - title: Share files with others
-          url: /java-share-files/
+          url: /programming/java/java-share-files/
 
         - title: Enums
-          url: /java-enums/
+          url: /programming/java/java-enums/
 
         - title: Garbage collection
-          url: /java-garbage-collection/
+          url: /programming/java/java-garbage-collection/
 
         - title: Generics
-          url: /java-generics/
+          url: /programming/java/java-generics/
 
         - title: Delegates
-          url: /java-delegates/
+          url: /programming/java/java-delegates/
 
         - title: "Null"
-          url: /java-null/
+          url: /programming/java/java-null/
 
         - title: Inner classes
-          url: /java-inner-classes/
+          url: /programming/java/java-inner-classes/
 
         - title: Casting
-          url: /java-casting/
+          url: /programming/java/java-casting/
 
         - title: Override
-          url: /java-override/
+          url: /programming/java/java-override/
 
         - title: Polymorphism
-          url: /java-polymorphism/
+          url: /programming/java/java-polymorphism/
 
         - title: Static blocks
-          url: /java-static-blocks/
+          url: /programming/java/java-static-blocks/
 
         - title: Stub
-          url: /java-stub/
+          url: /programming/java/java-stub/
 
         - title: Swing
-          url: /java-swing/
+          url: /programming/java/java-swing/
 
         - title: Returns
-          url: /java-return/
+          url: /programming/java/java-return/
 
         - title: JAR file
-          url: /java-jar-file/
+          url: /programming/java/java-jar-file/
 
         - title: Class path
-          url: /java-class-path/
+          url: /programming/java/java-class-path/
