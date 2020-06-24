@@ -1,5 +1,5 @@
 <div class="post-content">
-    <div class="home-post-title">
+    <div class="home-post-title"> {{page.year}}
     {% for post in site.posts %}
     {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
     {% if year == page.year %}
