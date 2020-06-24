@@ -1,8 +1,9 @@
 <div class="post-content">
     <div class="home-post-title">
+    {% assign thisYear = page.categoryName %}
     {% for post in site.posts %}
     {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
-    {% if year == page.year %}
+    {% if year == thisYear %}
         <div class="entry"><a href="{{ post.url }}">{{ post.title }}</a>
             <div class="home-post-meta">
                 {{ post.date | date: "%b %-d, %Y" }} &#8226;
