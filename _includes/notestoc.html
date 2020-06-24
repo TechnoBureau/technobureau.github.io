@@ -1,7 +1,7 @@
 <ul id="mytechsidebar" class="nav">
     {% if page.jtype %}
 
-    {% elsif page.jtype == "notes_java" %}
+    {% if page.jtype == "notes_java" %}
     {% assign sidebarTitle = "My Java notes" %}
     {% assign sidebar = site.data.sidebar_java.entries %}
 
