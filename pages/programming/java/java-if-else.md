@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: If else'
-permalink: /java-if-else/
+permalink: /programming/java/java-if-else/
 date: 2015-01-01 19:58:05.000000000 -08:00
 categories:
 - java

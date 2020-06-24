@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Swing'
-permalink: /java-swing/
+permalink: /programming/java/java-swing/
 date: 2015-01-01 20:26:21.000000000 -08:00
 categories:
 - java

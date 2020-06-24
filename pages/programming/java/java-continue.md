@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: continue'
-permalink: /java-continue/
+permalink: /programming/java/java-continue/
 date: 2015-01-01 19:39:29.000000000 -08:00
 categories:
 - java

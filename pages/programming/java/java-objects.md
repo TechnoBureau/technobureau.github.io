@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Objects'
-permalink: /java-objects/
+permalink: /programming/java/java-objects/
 date: 2015-01-01 20:12:47.000000000 -08:00
 categories:
 - java

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Subclasses'
-permalink: /java-subclasses/
+permalink: /programming/java/java-subclasses/
 date: 2015-01-01 19:45:07.000000000 -08:00
 categories:
 - java

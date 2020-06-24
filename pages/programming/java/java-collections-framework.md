@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Collections Framework'
-permalink: /java-collections-framework/
+permalink: /programming/java/java-collections-framework/
 date: 2015-01-01 19:35:52.000000000 -08:00
 categories:
 - java

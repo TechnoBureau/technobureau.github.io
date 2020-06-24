@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Code formatting'
-permalink: /java-code-formatting/
+permalink: /programming/java/java-code-formatting/
 date: 2015-01-01 19:34:58.000000000 -08:00
 categories:
 - java

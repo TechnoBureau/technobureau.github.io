@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Abstract classes and abstract methods'
-permalink: /java-abstract-methods/
+permalink: /programming/java/java-abstract-methods/
 date: 2015-01-01 19:30:33.000000000 -08:00
 categories:
 - java

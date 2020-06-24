@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Constants'
-permalink: /java-constants/
+permalink: /programming/java/java-constants/
 date: 2015-01-01 19:38:05.000000000 -08:00
 categories:
 - java

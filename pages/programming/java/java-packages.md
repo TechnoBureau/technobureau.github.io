@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Packages'
-permalink: /java-packages/
+permalink: /programming/java/java-packages/
 date: 2015-01-01 20:15:08.000000000 -08:00
 categories:
 - java

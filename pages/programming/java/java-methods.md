@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Methods'
-permalink: /java-methods/
+permalink: /programming/java/java-methods/
 date: 2015-01-01 20:08:45.000000000 -08:00
 categories:
 - java

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Tomcat'
-permalink: /java-tomcat/
+permalink: /programming/java/java-tomcat/
 date: 2015-01-01 20:27:26.000000000 -08:00
 categories:
 - java

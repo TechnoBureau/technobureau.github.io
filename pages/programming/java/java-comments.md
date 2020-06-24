@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Comments'
-permalink: /java-comments/
+permalink: /programming/java/java-comments/
 date: 2015-01-01 19:37:17.000000000 -08:00
 categories:
 - java

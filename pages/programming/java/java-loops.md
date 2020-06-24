@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Loops'
-permalink: /java-loops/
+permalink: /programming/java/java-loops/
 date: 2015-01-01 20:05:39.000000000 -08:00
 categories:
 - java

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Eclipse shortcuts'
-permalink: /java-eclipse-shortcuts/
+permalink: /programming/java/java-eclipse-shortcuts/
 date: 2015-01-01 19:40:54.000000000 -08:00
 categories:
 - java

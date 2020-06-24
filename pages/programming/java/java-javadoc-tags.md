@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Javadoc tags'
-permalink: /java-javadoc-tags/
+permalink: /programming/java/java-javadoc-tags/
 date: 2015-01-01 20:04:48.000000000 -08:00
 categories:
 - java

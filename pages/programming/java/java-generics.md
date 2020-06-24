@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Generics'
-permalink: /java-generics/
+permalink: /programming/java/java-generics/
 date: 2015-01-01 19:50:17.000000000 -08:00
 categories:
 - java

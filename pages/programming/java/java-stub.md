@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Stub'
-permalink: /java-stub/
+permalink: /programming/java/java-stub/
 date: 2015-01-01 20:25:31.000000000 -08:00
 categories:
 - java

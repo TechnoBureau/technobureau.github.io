@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Null'
-permalink: /java-null/
+permalink: /programming/java/java-null/
 date: 2015-01-01 20:11:19.000000000 -08:00
 categories:
 - java

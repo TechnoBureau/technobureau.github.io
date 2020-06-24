@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Polymorphism'
-permalink: /java-polymorphism/
+permalink: /programming/java/java-polymorphism/
 date: 2015-01-01 20:16:16.000000000 -08:00
 categories:
 - java

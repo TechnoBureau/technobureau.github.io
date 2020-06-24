@@ -4,7 +4,7 @@ entries:
     - title: JavaScript
       items:
         - title: Introduction
-          url: /programming/javascript/introduction/
+          url: /programming/javascript/
 
         - title: Numbers
           url: /programming/javascript/numbers-javascript/

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Treemaps'
-permalink: /java-treemaps/
+permalink: /programming/java/java-treemaps/
 date: 2015-01-01 20:29:10.000000000 -08:00
 categories:
 - java

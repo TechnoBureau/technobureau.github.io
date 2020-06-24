@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Static blocks'
-permalink: /java-static-blocks/
+permalink: /programming/java/java-static-blocks/
 date: 2015-01-01 20:24:53.000000000 -08:00
 categories:
 - java

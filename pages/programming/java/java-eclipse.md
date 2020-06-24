@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Eclipse'
-permalink: /java-eclipse/
+permalink: /programming/java/java-eclipse/
 date: 2015-01-03 18:56:08.000000000 -08:00
 categories:
 - java

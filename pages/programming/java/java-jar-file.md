@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: JAR file'
-permalink: /java-jar-file/
+permalink: /programming/java/java-jar-file/
 date: 2015-01-03 18:29:54.000000000 -08:00
 categories:
 - java

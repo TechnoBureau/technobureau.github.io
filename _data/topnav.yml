@@ -18,19 +18,20 @@ topnav_dropdowns:
 - title: Topnav dropdowns
   subcategories:
 
-  - title: Tools
-    items:
-    - title: Ansible
-      url: /tech/ansible/
-    - title: Airflow
-      url: /tech/airflow/
-
   - title: Programming
     items:
     - title: Javascript
       url: /programming/javascript/
     - title: Java
       url: /programming/java/
+
+
+  - title: Tools
+    items:
+    - title: Ansible
+      url: /tech/ansible/
+    - title: Airflow
+      url: /tech/airflow/
 
 
   - title: Archives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Share files with others using Git and Github'
-permalink: /java-share-files/
+permalink: /programming/java/java-share-files/
 date: 2015-01-03 22:03:12.000000000 -08:00
 categories:
 - java

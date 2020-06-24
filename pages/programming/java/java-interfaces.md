@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Interfaces'
-permalink: /java-interfaces/
+permalink: /programming/java/java-interfaces/
 date: 2015-01-01 20:01:41.000000000 -08:00
 categories:
 - java

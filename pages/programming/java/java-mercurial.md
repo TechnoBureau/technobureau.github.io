@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mercurial
-permalink: /java-mercurial/
+permalink: /programming/java/java-mercurial/
 date: 2015-01-01 19:56:39.000000000 -08:00
 categories:
 - java

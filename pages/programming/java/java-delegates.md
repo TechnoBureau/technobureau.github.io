@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Delegates'
-permalink: /java-delegates/
+permalink: /programming/java/java-delegates/
 date: 2015-01-01 19:40:17.000000000 -08:00
 categories:
 - java

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Servlet'
-permalink: /java-servlet/
+permalink: /programming/java/java-servlet/
 date: 2015-01-01 20:22:33.000000000 -08:00
 categories:
 - java

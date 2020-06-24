@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Java: Garbage collection'
-permalink: /java-garbage-collection/
+permalink: /programming/java/java-garbage-collection/
 date: 2015-01-01 19:49:43.000000000 -08:00
 categories:
 - java
