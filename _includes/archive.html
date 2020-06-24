@@ -1,7 +1,7 @@
 <div class="post-content">
-    <div class="home-post-title"> {{page.year}}
+    <div class="home-post-title">
     {% for post in site.posts %}
-    {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% capture year %}{{post.date | date: "%Y"}}{% endcapture %} -- {{year}}
     {% if year == page.year %}
         <div class="entry"><a href="{{ post.url }}">{{ post.title }}</a>
             <div class="home-post-meta">
