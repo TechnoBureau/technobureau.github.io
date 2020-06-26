@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What is Computer Network ?. Introduction about computer network
-permalink: /tech/linux/introduction-about-computer-network/
+title: How to Login into Remotely login into Linux System?
+permalink: /tech/linux/how-to-remote-login-into-the-linux-pcserver/
 date: 2014-12-16 17:10:00.000000000 +05:30
 category: linux
 keywords: 
