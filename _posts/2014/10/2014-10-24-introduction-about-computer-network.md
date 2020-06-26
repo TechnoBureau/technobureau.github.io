@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is Computer Network ?. Introduction about computer network
+title: "What is Computer Network ?. Introduction about computer network"
 permalink: /tech/linux/introduction-about-computer-network/
 date: 2014-10-24 08:43:20.000000000 +05:30
 category: networking
@@ -11,7 +11,6 @@ keywords:
 - notes about network
 description: "A Computer network or data network is a telecommunications network that allows computers to exchange data. In computer networks, networked computing devices pass data to each other along different data connections. Data is transferred in the form of packets by using encoding and decoding standards . The connections (network links) between nodes are established using either cable media or wireless media. The best-known computer network is the Internet."
 ---
-
 
 Network computer devices that originate, route and terminate the data are called network nodes. Nodes can include hosts such as personal computers, phones, servers as well as networking hardware. Two such devices are said to be networked together when one device is able to exchange information with the other device, whether or not they have a direct connection to each other.  
   

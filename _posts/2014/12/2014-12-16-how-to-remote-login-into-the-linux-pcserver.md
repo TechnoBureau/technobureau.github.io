@@ -18,14 +18,16 @@ To install **OpenSSH**, open a terminal and run the following commands with supe
   
 **On Ubuntu/Debian/Linux Mint**  
   
-
+```
     sudo apt-get install openssh-server openssh-client
+```
 
 ****On RHEL/Centos/Fedora  
 ****
 
+```
     yum -y install openssh-server openssh-clients
-
+```
   
 **Windows**
 
@@ -42,7 +44,9 @@ For Remote accessing of Linux PC from Linux PC/Server is required openssh client
 
 *   To log-in into the remote Linux shell, open terminal and type:
 
+```
     ssh -X <your_username>@<host_name>
+```
 
 *   **host name** is the remote server's domain name (e.g. [www.technobureau.com](../../))
 
@@ -50,8 +54,12 @@ For Remote accessing of Linux PC from Linux PC/Server is required openssh client
 
 *   To copy files **To** the server run the following on your workstation or laptop:
 
+```
     scp -r <path_from_directory> <your_username>@<host_name>:<path_to_directory>
+```
 
 *   To copy files **From** the server run the following on your workstation or laptop:
 
+```
     scp -r <your_username>@<host_name>:<path_from_directory> <path_to_directory>
+```
