@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What is Linux ?. Introduction about linux"
+title: Introduction about linux
 permalink: /tech/linux/what-is-linux-introduction-about-linux/
 date: 2014-12-01 17:19:20.000000000 +05:30
 category: linux
@@ -9,10 +9,9 @@ keywords:
 - opensource
 - about linux
 - notes about linux
-description: "Linuxis a UNIX-based open-source operating system. Linus Torvalds is a original creator of the Linux operating system.Any changes to it are open for all to adopt, and as a result it has developed into a very powerful/security/virus-free OS that is rapidly gaining in popularity worldwide, particularly among those seeking an alternative to Windows.Linux is free to use and install, and is more reliable than almost all other systems, running for many months and even years without a reboot being necessary,so now mostly used operating system for PC's and also more suitable for IT business."
+description: "Linux is a UNIX-based open-source operating system. Linus Torvalds is a original creator of the Linux operating system.Any changes to it are open for all to adopt, and as a result it has developed into a very powerful/security/virus-free OS that is rapidly gaining in popularity worldwide, particularly among those seeking an alternative to Windows.Linux is free to use and install, and is more reliable than almost all other systems, running for many months and even years without a reboot being necessary,so now mostly used operating system for PC's and also more suitable for IT business."
 ---
-
-Linux operating system is made up of three parts.: Kernel,Shell,Programs.
+Linux operating system is made up of three parts, such as Kernel,Shell,Programs.
 
 **Kernel**
 Kernel is the main part of Linux operating system and it is acting as hub.It allocates time,resources such as memory to programs and handles the file-store and communications in response to system calls.Kernel receive the request the command from the shell and do the operation accordingly by allocating necessary resources.
