@@ -280,7 +280,7 @@ Before creating a filesystem make sure the disk which you need to create is alre
 *   **/etc/X11** : Configuration files of **X-window** System.
 *   **/usr/bin** : Normal user **executable** commands.
 *   **/usr/bin/X11** : Binaries of **X windows** System.
-*   **/usr/include** : Contains include files used by ‘**c**‘ program.
+*   **/usr/include** : Contains include files used by **c** program.
 *   **/usr/share** : Shared directories of **man files**, **info files**,etc.
 *   **/usr/lib** : Library files which are required during program **compilation**.
 *   **/usr/sbin** : Commands for **Super User**, for System Administration.

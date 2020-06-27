@@ -19,7 +19,7 @@ Swap space is absolutely necessary when system going to hibernate. It is a desti
 
   
 ### Recommended System Swap Space  
-#### Amount of RAM in the System** -- Recommended Amount of Swap Space 
+#### Amount of RAM in the System -- Recommended Amount of Swap Space 
 
 4GB of RAM or less -- a minimum of 2GB of swap space  
 4GB to 16GB of RAM -- a minimum of 4GB of swap space  
