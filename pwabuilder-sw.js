@@ -26,16 +26,10 @@ self.addEventListener("message", (event) => {
   }
 });
 
-self.addEventListener('install', async (event) => {
-  event.waitUntil(
-    caches.open(CACHE)
-      .then((cache) => cache.add(offlineFallbackPage))
-  );
-});
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
-    caches.open(CACHE_NAME)
+    caches.open(CACHE)
       .then(function(cache) {
         console.log('[TechnoBureau] - Opened cache');
         return cache.addAll(urlsToCache.map(function(urlsToCache) {
