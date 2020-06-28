@@ -32,7 +32,7 @@ File system logically defined the files in the disk by mentioned below:
 9. Minimal File Systems
 
 
-### Disk File Systems :
+#### Disk File Systems
 
 Ability of disk storage media to randomly address data in a short amount of time.Additional considerations include the speed
 of accessing data following that initially requested and the anticipation that the following data may also be requested.
@@ -58,13 +58,13 @@ Here are some of Disk File Systems are :
 
 ISO 9660 and Universal Disk Format (UDF) are two common formats that target Compact Discs, DVDs and Blu-ray discs.
 
-### Flash File Systems :
+#### Flash File Systems
 
 A flash file system considers the special abilities, performance and restrictions of flash memory devices. Frequently a disk
 file system can use a flash memory device as the underlying storage media but it is much better to use a file system
 specifically designed for a flash device.
 
-### Tape File Systems :
+#### Tape File Systems
 
 A tape file system is a file system and tape format designed to store files on tape in a self-describing form. Magnetic 
 tapes are sequential storage media with significantly longer random data access times than disks, posing challenges to the 
@@ -74,13 +74,13 @@ In a disk file system there is typically a master file directory, and a map of u
 additions, changes, or removals require updating the directory and the used/free maps. Random access to data regions is 
 measured in milliseconds so this system works well for disks.
 
-### Database file systems :
+#### Database file systems
 
 Another concept for file management is the idea of a database-based file system. Instead of, or in addition to, hierarchical
 structured management, files are identified by their characteristics, like type of file, topic, author, or similar rich
 metadata.
 
-### Transactional file systems :
+#### Transactional file systems
 
 Some programs need to update multiple files "all at once". For example, a software installation may write program binaries, 
 libraries, and configuration files. If the software installation fails, the program may be unusable. If the installation is 
@@ -98,7 +98,7 @@ Journaling file systems are one technique used to introduce transaction-level co
 transactions are not exposed to programs as part of the OS API; they are only used internally to ensure consistency at the 
 granularity of a single system call.
 
-### Network File Systems :
+#### Network File Systems
 
 A network file system is a file system that acts as a client for a remote file access protocol, providing access to files on
 a server. Programs using local interfaces can transparently create, manage and access hierarchical directories and files in 
@@ -115,7 +115,7 @@ And file-system-like clients for
 * FTP
 * WebDAV
 
-### Shared disk file systems :
+#### Shared disk file systems
 
 A shared disk file system is one in which a number of machines (usually servers) all have access to the same external disk 
 subsystem (usually a SAN). The file system arbitrates access to that subsystem, preventing write collisions.
@@ -128,23 +128,43 @@ Examples include
 * CXFS from SGI and
 * StorNext from Quantum Corporation.
 
-### Special file systems :
+#### Special file systems
     
 A special file system presents non-file elements of an operating system as files so they can be acted on using file system 
 APIs. This is most commonly done in Unix-like operating systems, but devices are given file names in some non-Unix-like 
 operating systems as well.
     
-1. Device file systems :
+##### Device file systems
 
   A device file system represents I/O devices and pseudo-devices as files, called device files. Examples in Unix-like 
 systems include devfs and, in Linux 2.6 systems, udev. In non-Unix-like systems, such as TOPS-10 and other operating systems
 influenced by it, where the full filename or pathname of a file can include a device prefix, devices other than those 
 containing file systems are referred to by a device prefix specifying the device, without anything following it.
     
-2. Other special file systems :
+##### Other special file systems
 
   * In the Linux kernel, configfs and sysfs provide files that can be used to query the kernel for information and configure entities in the kernel.
   * procfs maps processes and, on Linux, other operating system structures into a filespace.
+
+#### Minimal file system
+
+In the 1970s disk and digital tape devices were too expensive for some early microcomputer users. An 
+inexpensive basic data storage system was devised that used common audio cassette tape. Also called as 
+Minimal file system.
+
+When the system needed to write data, the user was notified to press "RECORD" on the cassette recorder, then 
+press "RETURN" on the keyboard to notify the system that the cassette recorder was recording. The system 
+wrote a sound to provide time synchronization, then modulated sounds that encoded a prefix, the data, a 
+checksum and a suffix. When the system needed to read data, the user was instructed to press "PLAY" on the 
+cassette recorder. The system would listen to the sounds on the tape waiting until a burst of sound could be 
+recognized as the synchronization. The system would then interpret subsequent sounds as data. When the data 
+read was complete, the system would notify the user to press "STOP" on the cassette recorder. It was 
+primitive, but it worked (a lot of the time). Data was stored sequentially, usually in an unnamed format, 
+although some systems (such as the Commodore PET series of computers) did allow the files to be named. 
+Multiple sets of data could be written and located by fast-forwarding the tape and observing at the tape 
+counter to find the approximate start of the next data region on the tape. The user might have to listen to 
+the sounds to find the right spot to begin playing the next data region. Some implementations even included 
+audible sounds interspersed with the data.
 
 ### Linux File System Hierarchy
 
