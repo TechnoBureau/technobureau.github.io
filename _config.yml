@@ -1,5 +1,6 @@
 title: "A Technology Intelligence"
 name: "TechnoBureau"
+short_name: "TB"
 description: A Tutorial for Linux learning enthuaist.
 media: https://ganapathichidambaram.github.io
 host: 127.0.0.1
@@ -124,3 +125,6 @@ social:
 #  bing: 352636FE6BAFC693A6938983FC6A227E
 
 lang: en_US
+language: "en"
+lang_direction: "ltr"
+color: "#590C12"

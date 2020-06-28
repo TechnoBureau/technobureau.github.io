@@ -1,0 +1,17 @@
+---
+layout: none
+
+---
+
+{
+  "lang": "",
+  "dir": "",
+  "name": "{{ site.name }}",
+  "short_name": "{{ site.short_name }}",
+  "icons": [{"src":"https://ganapathichidambaram.github.io/favicon.ico","sizes":"16x16"}],
+  "theme_color": "",
+  "background_color": "",
+  "start_url": "https://ganapathichidambaram.github.io/",
+  "display": "standalone",
+  "orientation": "natural"
+}
