@@ -857,7 +857,7 @@ p {
     border-color: #dedede
 }
 
-#mytechsidebar img,
+.mytechsidebar img,
 .sidebarComics img {
     float: left;
     max-width: 250px;
