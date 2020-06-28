@@ -352,7 +352,7 @@ a.accordion-toggle {
     padding: 4px 10px
 }
 
-ul.mysidebar li {
+ul#mysidebar li {
     font-family: arial;
     margin-bottom: 9px;
     vertical-align: center;
@@ -360,24 +360,24 @@ ul.mysidebar li {
     padding-bottom: 6px;
 }
 
-ul.mysidebar li a {
+ul#mysidebar li a {
     font-size: 15px;
 }
 
-ul.mysidebar li.active {
+ul#mysidebar li.active {
     border-top: 1px solid #dedede;
 }
 
-ul.mysidebar {
+ul#mysidebar {
     border-radius: 0;
     padding: 20px width: 250px
 }
 
-ul.mysidebar li {
+ul#mysidebar li {
     margin: 1px
 }
 
-ul.mysidebar li.firstLevel a:hover {
+ul#mysidebar li.firstLevel a:hover {
     color: #000
 }
 
@@ -436,7 +436,7 @@ ul.nav li ul li a {
     color: #000
 }
 
-ul.mysidebar li a {
+ul#mysidebar li a {
     color: #444;
     font-size: 14px;
 }
@@ -445,7 +445,7 @@ ul.mysidebar li a {
     font-size: 12px
 }
 
-ul.mysidebar li.active a:hover {
+ul#mysidebar li.active a:hover {
   color: #777;
 }
 
@@ -1171,8 +1171,8 @@ blockquote {
     background-color: #f0f0f0
 }
 
-ul.mysidebar li.firstLevel a,
-ul.mysidebar li.sublevel a {
+ul#mysidebar li.firstLevel a,
+ul#mysidebar li.sublevel a {
     font-family: Montserrat, "Helvetica Neue", Arial, sans-serif
 }
 
@@ -1204,15 +1204,15 @@ div.activity {
     color: gray
 }
 
-ul.mysidebar li.firstLevel a {
+ul#mysidebar li.firstLevel a {
     font-size: 14px
 }
 
-ul.mysidebar li.sublevel a {
+ul#mysidebar li.sublevel a {
     font-size: 12px
 }
 
-ul.mysidebar li.active a {
+ul#mysidebar li.active a {
     font-color: #fff
 }
 
@@ -1371,7 +1371,7 @@ video {
     max-width: 640px
 }
 
-ul.mysidebar li.active>a {
+ul#mysidebar li.active>a {
     color: #444;
     font-weight: bold;
 
@@ -1561,7 +1561,7 @@ p.warning::before {
 }
 /* end callout styles*/
 
-ul.mysidebar.nav > li.subcatTitle {
+ul#mysidebar.nav > li.subcatTitle {
     background-color: orange;
 }
 
