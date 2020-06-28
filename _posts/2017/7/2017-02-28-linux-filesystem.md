@@ -82,7 +82,7 @@ metadata.
 
 ### Transactional file systems :
 
-Some programs need to update multiple files “all at once”. For example, a software installation may write program binaries, 
+Some programs need to update multiple files "all at once". For example, a software installation may write program binaries, 
 libraries, and configuration files. If the software installation fails, the program may be unusable. If the installation is 
 upgrading a key system utility, such as the command shell, the entire system may be left in an unusable state.
 
@@ -127,3 +127,202 @@ Examples include
 * SFS from DataPlow,
 * CXFS from SGI and
 * StorNext from Quantum Corporation.
+
+### Special file systems :
+    
+A special file system presents non-file elements of an operating system as files so they can be acted on using file system 
+APIs. This is most commonly done in Unix-like operating systems, but devices are given file names in some non-Unix-like 
+operating systems as well.
+    
+1. Device file systems :
+
+  A device file system represents I/O devices and pseudo-devices as files, called device files. Examples in Unix-like 
+systems include devfs and, in Linux 2.6 systems, udev. In non-Unix-like systems, such as TOPS-10 and other operating systems
+influenced by it, where the full filename or pathname of a file can include a device prefix, devices other than those 
+containing file systems are referred to by a device prefix specifying the device, without anything following it.
+    
+2. Other special file systems :
+
+  * In the Linux kernel, configfs and sysfs provide files that can be used to query the kernel for information and configure entities in the kernel.
+  * procfs maps processes and, on Linux, other operating system structures into a filespace.
+
+### Linux File System Hierarchy
+
+*   **/boot/**
+    
+    Directory contains static files required to boot the system such as kernel.
+    
+*   **/dev/**
+    
+    Directory contains the device nodes that either represent devices that are attached to the system or virtual devices that are provided by the kernel.The _udev_ dameon takes care of creating and removing all these device node on this directory.
+    
+*   **/etc/**
+    
+    Reserved for configuration files that are required to the local machine.
+    
+*   **/lib/**
+    
+    Directory should contain the libraries needed to execute binaries are located on _/bin/_ and _/sbin/_. It is necessary to executes the commands within the root file system.
+    
+*   **/media/**
+    
+    Directory should used as mount point for removal media such as DVD-ROM or USB storage media stick.
+    
+*   **/mnt/**
+    
+    Directory reserved for temporary mounted file systems.
+    
+*   **/opt/**
+    
+    Directory to hold storage for most of application packages.It hold the manual files,binaries etc,.
+    
+*   **/proc/**
+    
+    Contains special files that either extract information from or send information to the kernel.for example it contain system memory,cpu information and other hardware information etc.
+    
+*   **/bin/**
+    
+    All the executable binary programs (file) required during booting, repairing, files required to run into single-user-mode, and other important, basic commands viz., cat, du, df, tar, rpm, wc, history, etc.
+    
+*   **/sbin/**
+    
+    Contains System binaries by the root user.It is used at boot time. It is essential for booting,restoring,recovering,repairing the system.
+    
+*   **/srv/**
+    
+    Directory contains site-specific data served by your system.It gives users the location of data files for particular service.
+    
+*   **/sys/**
+    
+    It contains the information about device similarly held in /proc/ directory. and also it utilizes the new systfs virtual file system specific to the 2.6 kernel.
+    
+*   **/usr/**
+    
+    Directory for the user level accessing files for configuration,binaries,libraries.And it contain the files that can shared across multiple machines.
+    
+*   **/var/**
+    
+    Directory for any programs to write logs or any other data need to stored by the programs.
+    
+
+### Filesystem comparison
+
+
+|FS Name|Year Introduced|Original OS|Max File Size|Max FS Size|Journaling|
+|--- |--- |--- |--- |--- |--- |
+|FAT16|1983|MSDOS V2|4GB|16MB to 8GB|N|
+|FAT32|1997|Windows 95|4GB|8GB to 2TB|N|
+|HPFS|1988|OS/2|4GB|2TB|N|
+|NTFS|1993|Windows NT|16EB|16EB|Y|
+|HFS+|1998|Mac OS|8EB|?|N|
+|UFS2|2002|FreeBSD|512GB to 32PB|1YB|N|
+|ext2|1993|Linux|16GB to 2TB4|2TB to 32TB|N|
+|ext3|1999|Linux|16GB to 2TB4|2TB to 32TB|Y|
+|ReiserFS3|2001|Linux|8TB8|16TB|Y|
+|ReiserFS4|2005|Linux|?|?|Y|
+|XFS|1994|IRIX|9EB|9EB|Y|
+|JFS|?|AIX|8EB|512TB to 4PB|Y|
+|VxFS|1991|SVR4.0|16EB|?|Y|
+|ZFS|2004|Solaris 10|1YB|16EB|N|
+
+
+### Sizes Table
+
+|||
+|--- |--- |
+|Kilobyte - KB|1024 Bytes|
+|Megabyte - MB|1024 KBs|
+|Gigabyte - GB|1024 MBs|
+|Terabyte - TB|1024 GBs|
+|Petabyte - PB|1024 TBs|
+|Exabyte - EB|1024 PBs|
+|Zettabyte - ZB|1024 EBs|
+|Yottabyte - YB|1024 ZBs|
+
+### Creating a FileSystem
+
+Before creating a filesystem make sure the disk which you need to create is already unmounted or not.If not then unmount the same.And kindly note down creating filesystem would lost of entire data on the disk.
+
+*   **fdisk -l**
+    
+    It would list down all the available devices on the system.get the disk partition name from this command.
+    
+*   **umount /dev/sdb1**
+    
+    It should the un mount the hard disk from the system.
+    
+*   **mkfs.vfat /dev/sdb1 -n DiskName**
+    
+    It should format the disk partition which is specified and make the filesystem.
+    
+    **mkfs**
+    
+    mkfs is used to build a Linux filesystem on a device, usually a hard disk partition. The device argument is either the device name (e.g. /dev/hda1, /dev/sdb2), or a regular file that shall contain the filesystem. The size argument is the number of blocks to be used for the filesystem.
+    
+    **vfat**
+    
+    Formats the drive to FAT32 as filesystem type.And other formats available are **mkfs.bfs, mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.minix, mkfs.msdos, mkfs.vfat, mkfs.xfs, mkfs.xiafs** etc.
+    
+    /dev/sdb1
+    
+    Disk partition name on the disk should going to build the filesystem.
+    
+    * n
+        
+        Sets the volume name (label) of the filesystem. The volume name can be up to 11 characters long. The default is no label.DiskName is the name which you required for the filesystem.
+        
+        Optional Field.And it may vary depend upon the Filesystem.For Example Label option should be -L for NTFS Filesystem.
+    
+
+### Important Files and Usage
+
+*   **/boot/vmlinuz** : The **Linux Kernel** file.
+*   **/dev/hda** : Device file for the first **IDE HDD** (**Hard Disk Drive**)
+*   **/dev/hdc** : Device file for the **IDE Cdrom**, commonly
+*   **/dev/null** : A pseudo device, that don’t exist. Sometime garbage output is redirected to **/dev/null**, so that it gets lost, forever.
+*   **/etc/bashrc** : Contains system **defaults** and **aliases** used by bash shell.
+*   **/etc/crontab** : A shell script to run specified commands on a predefined time Interval.
+*   **/etc/exports** : Information of the file system available on **network**.
+*   **/etc/fstab** : Information of **Disk Drive** and their mount point.
+*   **/etc/group** : Information of **Security Group**.
+*   **/etc/grub.conf** : grub **bootloader** configuration file.
+*   **/etc/init.d** : Service **startup** Script.
+*   **/etc/lilo.conf** : lilo **bootloader** configuration file.
+*   **/etc/hosts** : Information of **Ip addresses** and corresponding **host names**.
+*   **/etc/hosts.allow** : List of **hosts allowed** to access services on the local machine.
+*   **/etc/host.deny** : List of **hosts denied** to access services on the local machine.
+*   **/etc/inittab** : INIT process and their interaction at various **run level**.
+*   **/etc/issue** : Allows to edit the **pre-login** message.
+*   **/etc/modules.conf** : Configuration files for **system modules**.
+*   **/etc/motd** : motd stands for **Message Of The Day**, The Message users gets upon login.
+*   **/etc/mtab** : Currently mounted **blocks** information.
+*   **/etc/passwd** : Contains **password** of system **users** in a shadow file, a security implementation.
+*   **/etc/printcap** : **Printer** Information
+*   **/etc/profile** : Bash shell **defaults**
+*   **/etc/profile.d** : Application script, executed after **login**.
+*   **/etc/rc.d** : Information about **run level** specific script.
+*   **/etc/rc.d/init.d** : Run Level **Initialisation** Script.
+*   **/etc/resolv.conf** : Domain Name Servers (**DNS**) being used by System.
+*   **/etc/securetty** : Terminal List, where **root** login is possible.
+*   **/etc/skel** : Script that populates new user **home** directory.
+*   **/etc/termcap** : An **ASCII** file that defines the behaviour of **Terminal**, **console** and **printers**.
+*   **/etc/X11** : Configuration files of **X-window** System.
+*   **/usr/bin** : Normal user **executable** commands.
+*   **/usr/bin/X11** : Binaries of **X windows** System.
+*   **/usr/include** : Contains include files used by **c** program.
+*   **/usr/share** : Shared directories of **man files**, **info files**,etc.
+*   **/usr/lib** : Library files which are required during program **compilation**.
+*   **/usr/sbin** : Commands for **Super User**, for System Administration.
+*   **/proc/cpuinfo** : **CPU** Information
+*   **/proc/filesystems** : File-system **Information** being used currently.
+*   **/proc/interrupts** : Information about the current **interrupts** being utilised currently.
+*   **/proc/ioports** : Contains all the **Input**/**Output** addresses used by devices on the server.
+*   **/proc/meminfo** : **Memory Usages** Information.
+*   **/proc/modules** : Currently using **kernel** module.
+*   **/proc/mount** : Mounted **File-system** Information.
+*   **/proc/stat** : Detailed **Statistics** of the current System.
+*   **/proc/swaps** : **Swap** File Information.
+*   **/version** : Linux **Version** Information.
+*   **/var/log/lastlog** : log of last **boot** process.
+*   **/var/log/messages** : log of messages produced by **syslog** daemon at boot.
+*   **/var/log/wtmp** : list login **time** and **duration** of each user on the system currently.

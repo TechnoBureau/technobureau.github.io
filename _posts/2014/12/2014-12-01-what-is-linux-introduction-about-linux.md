@@ -29,9 +29,9 @@ Programs is the set of code to do the operation required for the user and it can
 * Free of Cost - Core OS and related software applications comes under GNU general public license.we can download the OS and related application at free of cost.
 * It is free to use and distribute.
 * Support is free through online help sites, blogs and forums.
-* It is very reliable – Linux distributions getting lower crashes compare to other operating systems.
+* It is very reliable - Linux distributions getting lower crashes compare to other operating systems.
 * Large number of software developed for Linux under open-source license.
 * It is very resistant to malware such as spyware, adware and viruses.
 * It runs in a wide variety of machines than cannot be updated to use newer Windows versions.Adapted with almost all the type of hardware's.
-* Since the source code is visible, ‘backdoors’ are easily spotted, so Linux offers greater security for sensitive applications.
+* Since the source code is visible, 'backdoors' are easily spotted, so Linux offers greater security for sensitive applications.
 * Linux offers a high degree of flexibility of configuration, and significant customization is possible without modifying the source code.
