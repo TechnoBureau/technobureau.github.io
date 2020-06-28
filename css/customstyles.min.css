@@ -456,7 +456,7 @@ ul.mysidebar li.active a:hover {
 .navbar-inverse .navbar-nav>.open>a:focus,
 .navbar-inverse .navbar-nav>.open>a:hover {
     border-radius: 5px;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
 }
 
 .topnavlinks {
