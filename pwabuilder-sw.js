@@ -15,9 +15,6 @@ const FONT_CACHE = "fonts";
 const offlineFallbackPage = "index.html";
 var urlsToCache = [
   '/',
-  '*',
-  '/tech*',
-  '/programming*',
 ];
 
 self.addEventListener("message", (event) => {
@@ -119,6 +116,10 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
       .then(function(response) {
+      if (!response || response.status === 404) {
+        console.log("no-match");
+        return;
+      }
         // Cache hit - return response
         if (response) {
           return response;
@@ -137,7 +138,7 @@ self.addEventListener('fetch', function(event) {
             // to clone it so we have two streams.
             var responseToCache = response.clone();
 
-            caches.open(CACHE_NAME)
+            caches.open(CACHE)
               .then(function(cache) {
                 cache.put(event.request, responseToCache);
               });
@@ -148,24 +149,3 @@ self.addEventListener('fetch', function(event) {
       })
     );
 });
-
-function fromCache(request) {
-  // Check to see if you have it in the cache
-  // Return response
-  // If not in the cache, then return error page
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request).then(function (matching) {
-      if (!matching || matching.status === 404) {
-        return Promise.reject("no-match");
-      }
-
-      return matching;
-    });
-  });
-}
-
-function updateCache(request, response) {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.put(request, response);
-  });
-}
