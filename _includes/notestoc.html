@@ -1,4 +1,4 @@
-{% if page.jtype %}
+{% if page.jtype  and page.jtype != "homepage" %}
     <ul class="mytechsidebar nav">
     {% if page.jtype == "notes_java" %}
     {% assign sidebarTitle = "My Java notes" %}
