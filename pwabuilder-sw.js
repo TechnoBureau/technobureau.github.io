@@ -42,6 +42,7 @@ if (workbox.navigationPreload.isSupported()) {
   workbox.navigationPreload.enable();
 }
 
+/*
 workbox.routing.registerRoute(
   ({event}) => event.request.destination === 'document',
   new workbox.strategies.NetworkFirst({
@@ -111,7 +112,7 @@ workbox.routing.registerRoute(
   })
 );
 
-
+*/
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
