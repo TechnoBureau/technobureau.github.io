@@ -12,7 +12,7 @@ search: false
   "icons": [{"src":"https://ganapathichidambaram.github.io/favicon.ico","sizes":"16x16"}],
   "theme_color": "#590C12",
   "background_color": "#FFFFFF",
-  "start_url": "https://ganapathichidambaram.github.io/",
+  "start_url": "https://ganapathichidambaram.github.io",
   "display": "fullscreen",
   "orientation": "any"
 }
