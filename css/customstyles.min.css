@@ -1641,3 +1641,7 @@ div.podcastTranscript {
   padding: 15px;
   border: #dedede;
 }
+
+input.btn.btn-warning {
+    color:#180208;
+}
