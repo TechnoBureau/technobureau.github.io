@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction about computer network
+title: What is Computer Network ?.Introduction About Computer Network
 permalink: /tech/linux/introduction-about-computer-network/
 date: 2014-10-24 08:43:20.000000000 +05:30
 category: networking

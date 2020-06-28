@@ -1,6 +1,6 @@
 ---
 layout: post
-title: complete reference about linux filesystem
+title: Complete Reference About Linux Filesystem
 permalink: /tech/linux/complete-reference-about-linux-filesystem/
 date: 2017-02-28 23:09:20.000000000 +05:30
 category: linux

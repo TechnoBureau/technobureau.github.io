@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction about linux
+title: What is Linux ?. Introduction About Linux
 permalink: /tech/linux/what-is-linux-introduction-about-linux/
 date: 2014-12-01 17:19:20.000000000 +05:30
 category: linux
