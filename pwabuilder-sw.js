@@ -37,10 +37,10 @@ self.addEventListener('install', function(event) {
       })
   );
 });
-
+/*
 if (workbox.navigationPreload.isSupported()) {
   workbox.navigationPreload.enable();
-}
+}*/
 
 /*
 workbox.routing.registerRoute(
