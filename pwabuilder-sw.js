@@ -1,19 +1,19 @@
 // This is the "Offline copy of pages" service worker
 
-const CACHE = "pwabuilder-offline";
+const CACHE = "TB-CACHE";
 // This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
-const HTML_CACHE = "html";
-const JS_CACHE = "javascript";
-const STYLE_CACHE = "stylesheets";
-const IMAGE_CACHE = "images";
-const FONT_CACHE = "fonts";
+const HTML_CACHE = "TB-html";
+const JS_CACHE = "TB-javascript";
+const STYLE_CACHE = "TB-stylesheets";
+const IMAGE_CACHE = "TB-images";
+const FONT_CACHE = "TB-fonts";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "index.html";
+const offlineFallbackPage = "/";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -122,25 +122,3 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
-
-
-function fromCache(request) {
-  // Check to see if you have it in the cache
-  // Return response
-  // If not in the cache, then return error page
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request).then(function (matching) {
-      if (!matching || matching.status === 404) {
-        return Promise.reject("no-match");
-      }
-
-      return matching;
-    });
-  });
-}
-
-function updateCache(request, response) {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.put(request, response);
-  });
-}
