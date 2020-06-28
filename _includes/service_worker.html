@@ -2,7 +2,7 @@
 
 if ("serviceWorker" in navigator) {
   if (navigator.serviceWorker.controller) {
-    console.log("An active service worker found, no need to register");
+    console.log("[TechnoBureau] An active service worker found, no need to register");
   } else {
     // Register the service worker
     navigator.serviceWorker
@@ -10,7 +10,7 @@ if ("serviceWorker" in navigator) {
         scope: "./"
       })
       .then(function (reg) {
-        console.log("Service worker has been registered for scope: " + reg.scope);
+        console.log("[TechnoBureau] Service worker has been registered for scope: " + reg.scope);
       });
   }
 }

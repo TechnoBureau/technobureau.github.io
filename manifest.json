@@ -3,14 +3,16 @@ layout: none
 search: false
 ---
 {
-  "lang": "en",
+  "lang": "English",
   "dir": "ltr",
   "name": "{{ site.name }}",
   "short_name": "{{ site.short_name }}",
+  "description": "{{ site.description }}",
+  "scope": "/",
   "icons": [{"src":"https://ganapathichidambaram.github.io/favicon.ico","sizes":"16x16"}],
-  "theme_color": "",
-  "background_color": "",
+  "theme_color": "#590C12",
+  "background_color": "#FFFFFF",
   "start_url": "https://ganapathichidambaram.github.io/",
-  "display": "standalone",
-  "orientation": "natural"
+  "display": "fullscreen",
+  "orientation": "any"
 }
