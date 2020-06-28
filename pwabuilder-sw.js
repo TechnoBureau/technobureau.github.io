@@ -1,7 +1,8 @@
 // This is the "Offline copy of pages" service worker
 
-const CACHE = "TB-Offline";
+const CACHE = "pwabuilder-offline";
 // This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
+
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
@@ -13,9 +14,6 @@ const FONT_CACHE = "fonts";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 const offlineFallbackPage = "index.html";
-var urlsToCache = [
-  '/',
-];
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -23,26 +21,17 @@ self.addEventListener("message", (event) => {
   }
 });
 
-self.addEventListener('install', function(event) {
-  // Perform install steps
+self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
-      .then(function(cache) {
-        console.log('[TechnoBureau] - Opened cache');
-        return cache.addAll(urlsToCache.map(function(urlsToCache) {
-            return new Request(urlsToCache, { mode: 'no-cors' });
-            })).then(function() {
-            console.log('All resources have been fetched and cached.');
-        });
-      })
+      .then((cache) => cache.add(offlineFallbackPage))
   );
 });
-/*
+
 if (workbox.navigationPreload.isSupported()) {
   workbox.navigationPreload.enable();
-}*/
+}
 
-/*
 workbox.routing.registerRoute(
   ({event}) => event.request.destination === 'document',
   new workbox.strategies.NetworkFirst({
@@ -112,41 +101,46 @@ workbox.routing.registerRoute(
   })
 );
 
-*/
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-      if (!response || response.status === 404) {
-        console.log("no-match");
-        return;
-      }
-        // Cache hit - return response
-        if (response) {
-          return response;
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+      try {
+        const preloadResp = await event.preloadResponse;
+
+        if (preloadResp) {
+          return preloadResp;
         }
 
-        return fetch(event.request).then(
-          function(response) {
-            // Check if we received a valid response
-            if(!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
+        const networkResp = await fetch(event.request);
+        return networkResp;
+      } catch (error) {
 
-            // IMPORTANT: Clone the response. A response is a stream
-            // and because we want the browser to consume the response
-            // as well as the cache consuming the response, we need
-            // to clone it so we have two streams.
-            var responseToCache = response.clone();
-
-            caches.open(CACHE)
-              .then(function(cache) {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          }
-        );
-      })
-    );
+        const cache = await caches.open(CACHE);
+        const cachedResp = await cache.match(offlineFallbackPage);
+        return cachedResp;
+      }
+    })());
+  }
 });
+
+
+function fromCache(request) {
+  // Check to see if you have it in the cache
+  // Return response
+  // If not in the cache, then return error page
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      if (!matching || matching.status === 404) {
+        return Promise.reject("no-match");
+      }
+
+      return matching;
+    });
+  });
+}
+
+function updateCache(request, response) {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.put(request, response);
+  });
+}
