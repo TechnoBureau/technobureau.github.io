@@ -1,6 +1,5 @@
-<ul id="mytechsidebar" class="nav">
-    {% if page.jtype %}
-
+{% if page.jtype %}
+    <ul id="mytechsidebar" class="nav">
     {% if page.jtype == "notes_java" %}
     {% assign sidebarTitle = "My Java notes" %}
     {% assign sidebar = site.data.sidebar_java.entries %}
@@ -48,4 +47,4 @@
             {% endfor %}
         </li>
     </ul>
-    {% endif %}
+{% endif %}
