@@ -1,11 +1,10 @@
 ---
 layout: none
-
+search: false
 ---
-
 {
-  "lang": "",
-  "dir": "",
+  "lang": "en",
+  "dir": "ltr",
   "name": "{{ site.name }}",
   "short_name": "{{ site.short_name }}",
   "icons": [{"src":"https://ganapathichidambaram.github.io/favicon.ico","sizes":"16x16"}],
