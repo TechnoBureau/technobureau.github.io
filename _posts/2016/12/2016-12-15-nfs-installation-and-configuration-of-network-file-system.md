@@ -112,44 +112,22 @@ read-only permission. :
 And also please find the below various other options to share the
 network file system on remote network user.
 
-+---------------------------+------------------------------------------+
-| Entries in /etc/exports   | Description                              |
-| Configuration             |                                          |
-+===========================+==========================================+
-| /home/n                   | > /home/nfs/ directory accessible only   |
-| fs/ 192.168.1.55(rw,sync) | > for IP address 192.168.1.55 with read, |
-|                           |                                          |
-| :   | write permissions,  | and synchronized mode                    |
-+---------------------------+------------------------------------------+
-| /home/nfs/                | /home/nfs directory accessible only for  |
-| 192.168.1.5               | an IP address 192.168.1.55 with          |
-| 5(rw,sync,no_root_squash) | read,write permissions, synchronized     |
-|                           | mode and the remote root user will be    |
-|                           | treated as a root and will be able to    |
-|                           | change any file and directory            |
-+---------------------------+------------------------------------------+
-| /home/nfs/                | /home/nfs directory accessible for an    |
-| 192.168.1.0/24(ro,sync)   | 192.168.1.0 network with Subnet Mask     |
-|                           | 255.255.255.0 with read only             |
-|                           | permissions, and synchronized mode       |
-+---------------------------+------------------------------------------+
-| /home/nfs/                | /home/nfs directory accessible for an IP |
-| 192.168.1.55(rw,sync)     | address 192.168.1.55 with read, write    |
-| 192.168.1.10(ro,sync)     | permissions, and synchronized mode,and   |
-|                           | for an IP address 192.168.1.10 with read |
-|                           | only permission and synchronize mode.    |
-+---------------------------+------------------------------------------+
-| /home/n                   | > /home/nfs/ directory accessible only   |
-| fs/ technobureau(rw,sync) | > for an Hostname **technobureau** with  |
-|                           | > read,                                  |
-| :   | write permissions,  |                                          |
-|                           | and synchronized mode                    |
-+---------------------------+------------------------------------------+
-| /home/nfs/ \*.            | /home/nfs/ directory accessible for any  |
-| technobureau.com(rw,sync) | hostname under **technobureau.com**      |
-|                           | permissions, and synchronized mode.      |
-| :   | with read and write |                                          |
-+---------------------------+------------------------------------------+
+|Entries in /etc/exports Configuration|Description|
+|--- |--- |
+|/home/nfs/ 192.168.1.55(rw,sync)
+write permissions,|/home/nfs/ directory accessible only for IP address 192.168.1.55 with read,
+
+and synchronized mode|
+|/home/nfs/ 192.168.1.55(rw,sync,no_root_squash)|/home/nfs directory accessible only for an IP address 192.168.1.55 with read,write permissions, synchronized mode and the remote root user will be treated as a root and will be able to change any file and directory|
+|/home/nfs/ 192.168.1.0/24(ro,sync)|/home/nfs directory accessible for an 192.168.1.0 network with Subnet Mask 255.255.255.0 with read only permissions, and synchronized mode|
+|/home/nfs/ 192.168.1.55(rw,sync) 192.168.1.10(ro,sync)|/home/nfs directory accessible for an IP address 192.168.1.55 with read, write permissions, and synchronized mode,and for an IP address 192.168.1.10 with read only permission and synchronize mode.|
+|/home/nfs/ technobureau(rw,sync)
+write permissions,|/home/nfs/ directory accessible only for an Hostname technobureau with read,
+
+and synchronized mode|
+|/home/nfs/ *.technobureau.com(rw,sync)
+with read and write|/home/nfs/ directory accessible for any hostname under technobureau.com permissions, and synchronized mode.|
+
 
 Once export configuration file are edited and then need to restart the
 nfs service to reflect the changes.
