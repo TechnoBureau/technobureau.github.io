@@ -14,10 +14,6 @@ self.addEventListener("message", (event) => {
   }
 });
 
-if (workbox.navigationPreload.isSupported()) {
-  workbox.navigationPreload.enable();
-}
-
 workbox.routing.registerRoute(
   ({event}) => event.request.destination === 'document',
   new workbox.strategies.NetworkFirst({
