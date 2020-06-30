@@ -55,7 +55,7 @@ Other DHCP Messages:
 Debian and Ubuntu:
 
 ```
-    # apt-get install dhcp3­-server
+    # apt-get install dhcp3server
 ```
 
 Redhat & Fedora:
@@ -69,15 +69,15 @@ Redhat & Fedora:
 These mentioned below are the some basic configuration which need to configure to start the server by editing the /etc/dhcp/dhcpd.conf
 
 ```
-    default­lease­time 500;
+    defaultleasetime 500;
     
-    max­lease­time 6000;
+    maxleasetime 6000;
     
     subnet 10.1.1.0 netmask 255.255.255.0 {
     
       range 10.1.1.3 10.1.1.254;
     
-      option domain­name­servers 10.1.1.1, 8.8.8.8;
+      option domainnameservers 10.1.1.1, 8.8.8.8;
     
       option routers 10.1.1.1;
     
@@ -90,11 +90,11 @@ These mentioned below are the some basic configuration which need to configure t
 And we can able to enter the host-specific configuration to keep assign single IP address to the host by DHCP server.
 
 ```
-    host web­server {
+    host webserver {
     
       hardware ethernet 00:17:a4:c2:44:22;
     
-      fixed­address 10.1.1.200;
+      fixedaddress 10.1.1.200;
     
     }
 ```
