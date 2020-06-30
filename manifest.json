@@ -10,6 +10,22 @@ search: false
   "description": "{{ site.description }}",
   "scope": "/",
   "icons": [{"src":"https://ganapathichidambaram.github.io/favicon.ico","sizes":"16x16"}],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/images/apple-touch-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/apple-touch-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "theme_color": "#590C12",
   "background_color": "#FFFFFF",
   "start_url": "https://ganapathichidambaram.github.io",
