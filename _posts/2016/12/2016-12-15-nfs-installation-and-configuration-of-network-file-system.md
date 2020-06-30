@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NFS \: Installation and Configuration of Network File System
+title: NFS - Installation and Configuration of Network File System
 permalink: /tech/linux/nfs-installation-and-configuration-of-network-file-system/
 date: 2016-10-15 15:03:00.000000000 +05:30
 category: linux
@@ -10,12 +10,12 @@ keywords:
 - swap space
 description: "Network File System (NFS) is a distributed file system,lets a computer
 user to access the files on a remote computer as though they were on the
-user\'s own computer.Depending upon the configuration files are
+user's own computer.Depending upon the configuration files are
 accessible over the network and allow mounting the distributed file
 system on remote hosts"
 ---
 
-The user\'s system needs to have an NFS
+The user's system needs to have an NFS
 client and the other computer needs the NFS server. Both of them require
 that you also have TCP/IP installed since the NFS server and client use
 TCP/IP as the program that sends the files and updates back and forth.
@@ -25,18 +25,12 @@ used instead of TCP with earlier versions of NFS.)
 Required Services for NFS
 -------------------------
 
-  -------------------------------------------------------------------------
-  Services          Description                  Port Number  Transport
-  ----------------- ---------------------------- ------------ -------------
-  nfs               NFS Server- Shared file      2049         TCP/UDP
-                    System                                    
+| Services   | Description                                | Port Number      | Transport |
+| ---------- | ------------------------------------------ | ---------------- | --------- |
+| nfs        | NFS Server- Shared file System             | 2049             | TCP/UDP   |
+| nfslock    | NFS Lock Manager-Lock files on the server. | 32803 (Optional) | TCP/UDP   |
+| portmapper | Accepts Port reservation for RPC Services  | 111              | TCP/UDP   |
 
-  nfslock           NFS Lock Manager-Lock files  32803        TCP/UDP
-                    on the server.               (Optional)   
-
-  portmapper        Accepts Port reservation for 111          TCP/UDP
-                    RPC Services                              
-  -------------------------------------------------------------------------
 
 And following RPC Services facilities the NFS Services.
 
