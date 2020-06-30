@@ -1,12 +1,10 @@
 importScripts('/js/workbox/workbox-sw.js');
-import {registerRoute} from 'workbox-routing';
-import {StaleWhileRevalidate} from 'workbox-strategies';
 
-registerRoute(
+workbox.routing.registerRoute(
     ({request}) => request.destination === 'script' ||
                    request.destination === 'style'  ||
                    request.destination === 'image'  ||
                    request.destination === 'font'   ||
                    request.destination === 'document',
-    new StaleWhileRevalidate()
+    new workbox.strategies.StaleWhileRevalidate()
 );
