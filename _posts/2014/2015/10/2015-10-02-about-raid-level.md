@@ -2,7 +2,7 @@
 layout: post
 title: About Various RAID Level
 permalink: /tech/linux/about-various-raid-level/
-date: 2015-05-17 18:53:00.000000000 +05:30
+date: 2015-10-02 18:53:00.000000000 +05:30
 category: linux
 keywords: 
 - linux
