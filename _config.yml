@@ -98,12 +98,12 @@ target: web
 ####### jekyll seo tag configuration #######
 title: TechnoBureau
 tagline: A Tutorial for Linux learning enthuaist.
-description: A Tutorial for Linux learning enthuaist.
-url: https://ganapathichidambaram.github.io
+#description: A Tutorial for Linux learning enthuaist.
+#url: https://ganapathichidambaram.github.io
 author:
   twitter: ganapathi_raja
 twitter:
-  username: ganapathi_raja
+  username: TechnoBureau
   card: summary
 
 logo: https://ganapathichidambaram.github.io/images/site-logo-min.jpg
