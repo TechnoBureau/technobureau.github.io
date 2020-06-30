@@ -10,7 +10,7 @@ keywords:
 - swap space
 description: "Booting Process is the sequence process of Booting the computer
 system.And it includes the list of process performed by the computer
-hardware/software from the time of "Power-On" to the load Operating
+hardware/software from the time of Power-On to the load Operating
 System completely ready for users to run applications"
 ---
 # Booting Process
