@@ -9,7 +9,7 @@ keywords:
 - linux users
 - linux groups
 - overview of linux user
-description: "Linux/Unix operating systems have the ability to multitask in a manner similar to other operating systems. However, Linux’s major difference from other operating systems is its ability to have multiple users. Linux was designed to allow more than one user to have access to the system at the same time.
+description: "Linux/Unix operating systems have the ability to multitask in a manner similar to other operating systems. However, Linux's major difference from other operating systems is its ability to have multiple users. Linux was designed to allow more than one user to have access to the system at the same time.
 The user of the system is either a human being or an account used by specific applications identified by a unique numerical identification number called user ID (UID). Users within a group can have read permissions, write permissions, execute permissions or any combination of read/write/execute permissions for files owned by that group"
 ---
 
@@ -145,20 +145,20 @@ Each entry on this file should be mentioned below :
 
     ganapathi:x:ganapathi:ganapathi,raja
 
-1.  **Group name** — The name of the group. Used by various utility
+1.  **Group name** - The name of the group. Used by various utility
     programs as a human-readable identifier for the group.
-2.  **Encrypted password** — The encrypted password for the group. If
+2.  **Encrypted password** - The encrypted password for the group. If
     set, non-members of the group can join the group by typing the
     password for that group using the newgrp command. If the value of
     this field is \!, then no user is allowed to access the group
     using the newgrp command. A value of \!\! is treated the same as a
-    value of \! — however, it also indicates that a password has never
+    value of \! - however, it also indicates that a password has never
     been set before. If the value is null, only group members can log
     into the group.
-3.  **Group administrators** — Group members listed here (in a comma
+3.  **Group administrators** - Group members listed here (in a comma
     delimited list) can add or remove group members using the gpasswd
     command.
-4.  **Group members** — Group members listed here (in a comma
+4.  **Group members** - Group members listed here (in a comma
     delimited list) are regular, non-administrative members of the
     group
 
@@ -171,16 +171,16 @@ separated by whitespace.Absence of this file will not prevent system
 operation, but will probably result in undesirable operation.
 
 Blank lines and comment lines are ignored. Comments are introduced
-with a “\#” pound sign and the pound sign must be the first non-white
+with a "\#" pound sign and the pound sign must be the first non-white
 character of the line.
 
 Parameter values may be of four types: strings, booleans, numbers, and
 long numbers. A string is comprised of any printable characters. A
-boolean should be either the value “yes” or “no”. An undefined boolean
-parameter or one with a value other than these will be given a “no”
+boolean should be either the value "yes" or "no". An undefined boolean
+parameter or one with a value other than these will be given a "no"
 value. Numbers (both regular and long) may be either decimal values,
-octal values (precede the value with “0”) or hexadecimal values
-(precede the value with “0x”). The maximum value of the regular and
+octal values (precede the value with "0") or hexadecimal values
+(precede the value with "0x"). The maximum value of the regular and
 long numeric parameters is machine-dependent.
 
 The following configuration items are provided:
@@ -192,8 +192,8 @@ The following configuration items are provided:
     values in the gecos field of the /etc/passwd file may be changed
     by regular users using the chfn program. It can be any combination
     of letters f ,r, w, h, for Full name, Room number, Work phone, and
-    Home phone, respectively. For backward compatibility, “yes” is
-    equivalent to “rwh” and “no” is equivalent to “frwh”. If not
+    Home phone, respectively. For backward compatibility, "yes" is
+    equivalent to "rwh" and "no" is equivalent to "frwh". If not
     specified, only the superuser can make any changes. The most
     restrictive setting is better achieved by not installing chfn
     SUID.
@@ -293,7 +293,7 @@ the user(Full Name,Room Number,Work Phone,Home Phone) to store into
 
   - **-d --home \<home\_dir\>**
     
-    home\_dir will be used as the value for the user’s login
+    home\_dir will be used as the value for the user's login
     directory
     
       - Syntax :
