@@ -1,5 +1,4 @@
 importScripts('/js/workbox/workbox-sw.js');
-//cont CACHE = "TB-CACHE";
 import {registerRoute} from 'workbox-routing';
 import {StaleWhileRevalidate} from 'workbox-strategies';
 
