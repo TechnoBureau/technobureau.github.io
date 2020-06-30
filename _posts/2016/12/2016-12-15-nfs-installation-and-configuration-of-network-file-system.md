@@ -6,8 +6,9 @@ date: 2016-10-15 15:03:00.000000000 +05:30
 category: linux
 keywords: 
 - linux
-- swap
-- swap space
+- nfs
+- Network File System
+- nfslock
 description: "Network File System (NFS) is a distributed file system,lets a computer
 user to access the files on a remote computer as though they were on the
 user's own computer.Depending upon the configuration files are
