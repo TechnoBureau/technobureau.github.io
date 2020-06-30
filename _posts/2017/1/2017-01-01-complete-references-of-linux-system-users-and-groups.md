@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DHCP : Dynamic Host Configuration Protocol Overview
+title: Complete References of Linux System Users and Groups
 permalink: /tech/linux/complete-references-of-linux-system-users-and-groups/
 date: 2017-01-01 23:38:00.000000000 +05:30
 category: linux
