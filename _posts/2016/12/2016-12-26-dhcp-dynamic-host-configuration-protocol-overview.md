@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DHCP : Dynamic Host Configuration Protocol Overview
+title: DHCP - Dynamic Host Configuration Protocol Overview
 permalink: /tech/linux/dhcp-dynamic-host-configuration-protocol-overview/
 date: 2016-12-26 01:20:00.000000000 +05:30
 category: linux
@@ -19,7 +19,7 @@ In addition to IP address and subnet mask information, DHCP can provide the foll
 *   Time Servers
 *   WINS servers
 
-Port Number:  
+Port Number:
 
 *   67 - UDP - DHCP Server Port
 *   68 - UDP - DHCP Client Port
@@ -54,7 +54,7 @@ Other DHCP Messages:
 
 Debian and Ubuntu:
 
-    # apt-­get install dhcp3­server
+    # apt-get install dhcp3­server
 
 Redhat & Fedora:
 
