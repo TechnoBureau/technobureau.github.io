@@ -691,10 +691,8 @@ a[data-toggle] {
 }
 
 .summary {
-    padding-left: 10px;
     font-size: 130%;
-    color: #b8860b;
-    border-left: 2px solid #dedede;
+    color: #090701;
     margin: 20px 0
 }
 
