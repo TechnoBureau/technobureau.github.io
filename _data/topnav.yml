@@ -54,8 +54,6 @@ topnav_dropdowns:
     - title: Contact
       url: /contact/
 
-      # - title: User-Centered Documentation
-      #   url: https://idratherbewriting.com/ucd-introduction/
       # - title: JavaScript notes
       #   url: /javascript/
       # - title: DITA notes

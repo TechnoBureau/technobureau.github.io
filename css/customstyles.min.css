@@ -954,7 +954,7 @@ button.navbar-toggle {
 .srssfeed,
 .sstitcher,
 .stwitter {
-    background: url(https://idratherbewritingmedia.com/images/sprites.png) no-repeat;
+    background: /images/sprites.png no-repeat;
     float: left;
     padding: 6px;
     margin-top: 18px;
