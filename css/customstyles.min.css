@@ -177,7 +177,8 @@ table>thead>tr>th {
 
 .footer,
 p.external a {
-    text-align: right
+    text-align: right;
+    padding-bottom:2px;
 }
 
 table>caption+thead>tr:first-child>td,
