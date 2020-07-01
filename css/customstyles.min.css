@@ -22,7 +22,9 @@ li img {
 a,
 button.cursorNorm,
 img a {
-    cursor: hand
+    cursor: hand;
+    color:#611414;
+    font-weight:bold;
 }
 
 .bs-callout {
