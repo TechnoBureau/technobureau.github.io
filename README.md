@@ -1,3 +1,3 @@
 # Blog files for Ganapathi Chidambaram
 
-This is the Jekyll site.
+This is the Jekyll site for my website.
