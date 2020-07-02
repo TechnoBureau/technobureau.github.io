@@ -5,7 +5,7 @@ topnav:
   subcategories:
 
     - title: Home
-      url: {{ site.url }}
+      url: /
 
     - title: Linux
       url: /tech/linux/
