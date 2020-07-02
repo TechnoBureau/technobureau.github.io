@@ -5,7 +5,7 @@ topnav:
   subcategories:
 
     - title: Home
-      url: /
+      url: https://technobureau.com
 
     - title: Linux
       url: /tech/linux/
