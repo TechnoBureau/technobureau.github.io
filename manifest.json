@@ -9,7 +9,7 @@ search: false
   "short_name": "{{ site.short_name }}",
   "description": "{{ site.description }}",
   "scope": "/",
-  "icons": [{"src":"https://ganapathichidambaram.github.io/favicon.ico","sizes":"16x16"}],
+  "icons": [{"src":"{{ site.url }}/favicon.ico","sizes":"16x16"}],
   "icons": [
     {
       "src": "/favicon.ico",
@@ -28,7 +28,7 @@ search: false
   ],
   "theme_color": "#590C12",
   "background_color": "#FFFFFF",
-  "start_url": "https://ganapathichidambaram.github.io",
+  "start_url": "{{ site.url }}",
   "display": "fullscreen",
   "orientation": "any"
 }

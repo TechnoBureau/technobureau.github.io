@@ -2,7 +2,6 @@ title: "A Technology Intelligence"
 name: "TechnoBureau"
 short_name: "TB"
 description: A Tutorial for Linux learning enthuaist.
-#media: https://ganapathichidambaram.github.io
 host: 127.0.0.1
 port: 4029
 feedback_email: ganapathi.rj@gmail.com
@@ -27,7 +26,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo
 
-url: https://ganapathichidambaram.github.io
+url: https://technobureau.com
 
 exclude:
   - _drafts
@@ -73,7 +72,7 @@ twitter:
   username: TechnoBureau
   card: summary
 
-logo: https://ganapathichidambaram.github.io/images/site-logo-min.jpg
+logo: https://technobureau.com/images/site-logo-min.jpg
 
 social:
   name: Ganapathi Chidambaram

@@ -5,7 +5,7 @@ topnav:
   subcategories:
 
     - title: Home
-      url: https://ganapathichidambaram.github.io/
+      url: {{ site.url }}
 
     - title: Linux
       url: /tech/linux/

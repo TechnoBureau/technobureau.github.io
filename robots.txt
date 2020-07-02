@@ -1,1 +1,1 @@
-Sitemap: https://ganapathichidambaram.github.io/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
