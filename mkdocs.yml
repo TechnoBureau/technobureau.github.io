@@ -60,11 +60,11 @@ plugins:
   - search
   - minify:
       minify_html: true
-  #- social
-  # - git-revision-date-localized:
-  #     type: date
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
+  - social
+  - git-revision-date-localized:
+      type: date
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 extra:
   generator: false
