@@ -1,8 +1,5 @@
-_site/
-.sass-cache/
 .vs
 .vscode
-.jekyll-metadata
 **/audio/
 **/pdf
 **/audio/
@@ -40,4 +37,3 @@ _site/
 **/.DS_Store
 **/*.idea
 .DS_Store
-reindex.sh

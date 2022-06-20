@@ -1,0 +1,95 @@
+site_name: TechnoBureau
+site_description: 'A System will provide technical information through guides and tools for various topic such as Linux, Docker, Ansible and other DevOps.'
+site_author : Ganapathi Chidambaram
+docs_dir: en-us
+repo_url: https://github.com/ganapathichidambaram/ganapathichidambaram.github.io
+repo_name: ganapathichidambaram/ganapathichidambaram.github.io
+copyright: Copyright &copy; 2016 - 2022 TechnoBureau
+edit_uri: ""
+theme:
+  name: material
+  favicon: favicon.ico
+  #logo: TechnoBureau.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'blue grey'
+      accent: 'brown'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'blue grey'
+      accent: 'brown'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font: false
+    #text: Source Sans Pro
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tabs.sticky
+  #  - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.prune
+    - content.tabs.link
+  icon:
+    admonition:
+      note: fontawesome/solid/book-open
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+plugins:
+  - tags
+  - search
+  - minify:
+      minify_html: true
+  #- social
+  # - git-revision-date-localized:
+  #     type: date
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:ganapathi@technobureau.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/ganapathichidambaram
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ganapathichidambaram/
+    - icon: fontawesome/brands/instagram
+      link: https://twitter.com/ganapathi_raja
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/ganapathichidambaram
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details

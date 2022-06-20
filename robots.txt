@@ -1,1 +1,0 @@
-Sitemap: {{ site.url }}/sitemap.xml
