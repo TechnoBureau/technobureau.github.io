@@ -60,7 +60,6 @@ plugins:
   - search
   - minify:
       minify_html: true
-  - social
   - git-revision-date-localized:
       type: date
   - git-revision-date-localized:
