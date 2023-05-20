@@ -1,10 +1,11 @@
 site_name: TechnoBureau
 site_description: 'A System will provide technical information through guides and tools for various topic such as Linux, Docker, Ansible and other DevOps.'
 site_author : Ganapathi Chidambaram
+site_url: https://technobureau.com
 docs_dir: en-us
 repo_url: https://github.com/ganapathichidambaram/ganapathichidambaram.github.io
 repo_name: ganapathichidambaram/ganapathichidambaram.github.io
-copyright: Copyright &copy; 2016 - 2022 TechnoBureau
+copyright: Copyright &copy; 2016 - 2023 TechnoBureau
 edit_uri: ""
 theme:
   name: material
