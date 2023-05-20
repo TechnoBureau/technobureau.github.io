@@ -1,5 +1,5 @@
 site_name: TechnoBureau
-site_description: 'A System will provide technical information through guides and tools for various topic such as Linux, Docker, Ansible and other DevOps.'
+site_description: 'A System will provide technical information through guides and tools for various topic such as Linux, Docker, Ansible and other DevOps..'
 site_author : Ganapathi Chidambaram
 site_url: https://technobureau.com
 docs_dir: en-us
