@@ -1,6 +1,7 @@
 ---
 title: Introduction About Kubernetes
-slug: Learn/Kubernetes/Introduction_About_Kubernetes_And_Basics
+slug: Kubernetes/Introduction_About_Kubernetes_And_Basics
+comments: true
 tags:
   - Kubernetes
   - DevOps

@@ -1,6 +1,7 @@
 ---
 title: Introduction About Terraform
-slug: Learn/DevOps/Introduction_About_Terraform
+slug: DevOps/Introduction_About_Terraform
+comments: true
 tags:
   - Terraform
   - DevOps

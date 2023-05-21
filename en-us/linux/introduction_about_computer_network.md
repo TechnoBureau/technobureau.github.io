@@ -1,7 +1,7 @@
 ---
 title: What is Computer Network ?.Introduction About Computer Network
-slug: Learn/Linux/Introduction_About_Computer_Network
-date: 2014-10-24 08:43:20.000000000 +05:30
+slug: Linux/Introduction_About_Computer_Network
+comments: true
 category: networking
 tags:
   - Disambiguation

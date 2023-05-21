@@ -1,6 +1,7 @@
 ---
 title: Tell Me About Yourself
-slug: Learn/Career/Common/Tell_Me_About_Yourself
+slug: Career/Common/Tell_Me_About_Yourself
+comments: true
 tags:
   - Career
   - Interview

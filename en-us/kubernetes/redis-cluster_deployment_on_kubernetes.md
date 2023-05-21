@@ -1,6 +1,7 @@
 ---
 title: Redis-Cluster Deployment on Kubernetes
 slug: Learn/Kubernetes/Redis-Cluster_Deployment_On_Kubernetes
+comments: true
 tags:
   - Kubernetes
   - Cluster
