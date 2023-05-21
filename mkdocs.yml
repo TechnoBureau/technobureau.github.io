@@ -68,8 +68,8 @@ plugins:
       timezone: Asia/Kolkata
       exclude:
         - index.md
-  - pdf-with-js:
-        enable: false # should enable only when need PDF files
+  # - pdf-with-js:
+  #       enable: false # should enable only when need PDF files
 
 extra:
   generator: false
