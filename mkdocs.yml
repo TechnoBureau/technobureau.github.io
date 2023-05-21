@@ -69,18 +69,7 @@ plugins:
       exclude:
         - index.md
   - pdf-with-js:
-        enable: true # should enable only when need PDF files
-        add_download_button: false
-        display_header_footer: true
-        header_template: >-
-            <div style="font-size:8px; margin:auto; color:lightgray;">
-                <span class="title"></span>
-            </div>
-        footer_template: >-
-            <div style="font-size:8px; margin:auto; color:lightgray;">
-                Page <span class="pageNumber"></span> of
-                <span class="totalPages"></span>
-            </div>
+        enable: false # should enable only when need PDF files
 
 extra:
   generator: false
