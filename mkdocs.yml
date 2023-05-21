@@ -69,7 +69,7 @@ plugins:
       exclude:
         - index.md
   - pdf-with-js:
-        enable: false # should enable only when need PDF files
+        enable: true # should enable only when need PDF files
         add_download_button: false
         display_header_footer: true
         header_template: >-
