@@ -75,7 +75,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-XXXXXXXXXX
+    property: G-DQE6JLKNVW
   consent:
     title: Cookie consent
     description: >-
